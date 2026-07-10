@@ -1,0 +1,30 @@
+# Obsidian vault
+.obsidian/
+.trash/
+.DS_Store
+
+# Attachments (binary files - keep local only, too big for git)
+attachments/
+
+# ZIP / binary bundles
+*.zip
+*.tar.gz
+
+# Image caches (bot-b internal)
+*.jpg
+*.png
+*.jpeg
+*.gif
+*.webp
+
+# Editor temp files
+*.swp
+*.swo
+*~
+
+# Plan / spec drafts (not for vault)
+plans/
+specs/
+
+# OS temp
+Thumbs.db
