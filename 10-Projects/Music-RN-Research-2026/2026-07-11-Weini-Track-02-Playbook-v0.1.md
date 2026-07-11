@@ -214,7 +214,7 @@ no people, no text, no logo, contemplative atmosphere, 35mm film grain
 | Title | (Domain 1 LOCKED 后填) |
 | Main Genre | **Pop** |
 | Secondary Genre | **World** |
-| Subgenre (ID3) | Chinese Folk;Mandopop;Alternative R&B |
+| Subgenre (ID3) | **Mandopop;華語流行;Taiwanese Pop** (v0.4 修订, 官方映射) |
 | Language | zh-Hans |
 | Release Date | 2026-09-11 |
 | UPC | (申请) |

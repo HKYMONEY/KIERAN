@@ -62,7 +62,7 @@ next_review: 2026-10-11 (季度 Review)
 | 5 | TRACKNUMBER | ✅ | `{N}` (Track 在 Album 序号) | `1` |
 | 6 | TRACKTOTAL | ✅ | `{Total}` (Album 总 Track 数) | `1` (单曲) |
 | 7 | GENRE | ✅ | RouteNote 39-list **主 Genre** | `Pop` |
-| 8 | SUBGENRE | ⚠️ 推荐 | `;` 分隔 Sub-tag (Brand DNA) | `Chinese Folk;Mandopop;Alternative R&B` |
+| 8 | SUBGENRE | ⚠️ 推荐 | `;` 分隔 Sub-tag (Brand DNA, **以官方映射为准**) | `Mandopop;華語流行;Taiwanese Pop` |
 | 9 | LANGUAGE | ✅ | IETF 主语言代码 | `zh-Hant` |
 | 10 | LANGUAGE_SECONDARY | ⚠️ 推荐 | IETF 副语言代码 | `zh-Hans` |
 | 11 | LYRICS | ⚠️ 推荐 | 完整歌词 (主语言) | `{Lyrics v0.3-zhHant 内容}` |
@@ -212,8 +212,8 @@ next_review: 2026-10-11 (季度 Review)
 | 主要语言 | zh-Hant (主) + zh-Hans (副) |
 | 主 Genre | Pop |
 | 副 Genre | World |
-| Subgenre (官方映射) | **Mandopop;華語流行;Taiwanese Pop** |
-| ⚠️ Brand Bible v0.3 旧 Subgenre | Chinese Folk;Mandopop;Alternative R&B (待修正) |
+| Subgenre (官方映射, 2026-07-11 v0.4 LOCKED) | **Mandopop;華語流行;Taiwanese Pop** |
+| ~~Brand Bible v0.3 旧 Subgenre~~ | ~~`Chinese Folk;Mandopop;Alternative R&B`~~ (v0.4 已修正) |
 | Top 50 流量权重 | **#29 Mandopop** (Spotify TW 算法推荐高) |
 | 目标市场 | 台湾 + 中国大陆 + 东南亚 |
 | COMPOSER / LYRICIST / PRODUCER | XIAOYANG ZHANG |
@@ -451,7 +451,7 @@ metaflac --list "$FILE" | head -80
 | 2026-07-11 | v1.0 首版框架, 28 项必备 tags, A1+A2 已知 + A3-A8 待填 |
 | 2026-07-11 | Track 02 实战验证: FLAC 文件 tags 2 条 (仅 encoder + Suno id), 平台 dashboard 28 条 tags 完整, In Review 正常推进 |
 | 2026-07-11 | **v1.0 完整化**: 从 `八位藝人流量權重曲風映射報告.md` 读 8 艺人完整资料, § 0.3 + § 3 表全部填齐 (Rowen Vale / Lune Veya / Weini / Shibata Luna / Haevo / Oaeli / Aube Valois / Veloria Senda), 包含 Top 50 流量权重 + 发行优先级 + 目标市场 |
-| 2026-07-11 | **发现 Subgenre 不一致**: Brand Bible v0.3 给微霓 Subgenre = `Chinese Folk;Mandopop;Alternative R&B`, 官方映射 = `Mandopop;華語流行;Taiwanese Pop`. **需修正 Brand Bible v0.3** (待 Kieran 拍板) |
+| 2026-07-11 | **v0.4 拍板**: Kieran 选 A. 以官方映射为准, Subgenre = `Mandopop;華語流行;Taiwanese Pop` (强调台湾 Mandopop 流 + Spotify TW 算法). Brand Bible v0.3 § 5 + Playbook v0.1 § 5 + DELIVERY-REPORT-v1.0 § 3 同步修正. 微霓 Subgenre 跨 4 文档一致 ✅ |
 | 2026-Q4 (待) | 第一次季度 Review, 收集 5+ Track 数据后调 tags 列表 |
 
 ---
@@ -461,7 +461,7 @@ metaflac --list "$FILE" | head -80
 **责任人**: bot-b (自动跑 QC + Tag 写入脚本) + Kieran (拍板 8 艺人 Brand DNA + 创建 7 个 Brand Bible)
 
 **待办**:
-1. Kieran 拍板 **Brand Bible v0.3 微霓 Subgenre 修正** (官方 vs 旧值)
-2. 创建 7 个艺人 Brand Bible (A1/A2/A4/A5/A6/A7/A8, A3 微霓已有 v0.3)
-3. 创建 `apply-flac-tags.py` 脚本 (参数化: --artist A1-A8 + --track + --isrc + --upc)
-4. 整理 `八位藝人流量權重曲風映射報告.md` 进 30-Resources/ (现只在根目录)
+1. ~~Kieran 拍板 Brand Bible v0.3 微霓 Subgenre 修正~~ ✅ DONE v0.4
+2. 创建 7 个艺人 Brand Bible (A1/A2/A4/A5/A6/A7/A8, A3 微霓已有 v0.3, v0.4 Subgenre 修正)
+3. 创建 `apply-flac-tags.py` 脚本 (参数化: --artist A1-A8 + --track + --isrc + --upc) ✅ DONE v1.0 (13.4KB)
+4. 整理 `八位藝人流量權重曲風映射報告.md` 进 30-Resources/Artist-Profiles/ (现只在根目录)

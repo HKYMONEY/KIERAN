@@ -211,11 +211,15 @@ wide stereo, emotional delivery, ambient ballad
 
 ### Default 提交 (Slow Evolution, ★★★★☆)
 
-| Track 类型 | Main | Secondary | Subgenre |
-|---|---|---|---|
-| 微霓默认 | Pop | World | Chinese Folk;Mandopop;Alternative R&B |
-| 备选 1 | World | Pop | Chinese Folk;Ambient;World |
-| 备选 2 | Electronic | Alternative | Ambient;Atmospheric;Functional |
+| Track 类型 | Main | Secondary | Subgenre | 路由说明 |
+|---|---|---|---|---|
+| 微霓默认 | Pop | World | **Mandopop;華語流行;Taiwanese Pop** ⭐ v0.4 | **台湾 Mandopop 流 (Spotify TW 算法优先)** |
+| 备选 1 | World | Pop | Chinese Folk;Ambient;World | 跨域长尾 |
+| 备选 2 | Electronic | Alternative | Ambient;Atmospheric;Functional | Ambient 重 Track |
+
+> **v0.4 修订 (2026-07-11 Kieran 拍板)**: Subgenre 从 `Chinese Folk;Mandopop;Alternative R&B` → `Mandopop;華語流行;Taiwanese Pop`
+> **依据**: 厂牌官方映射报告 `八位藝人流量權重曲風映射報告.md` v2.0 — 微霓流量权重 **#29 Mandopop** (Spotify TW 算法推荐高)
+> **意图**: 强调台湾流路由, 主攻台湾 + 中国大陆 + 东南亚市场
 
 **具体每 Track 提交配置在 [[Weini-Track-02-Playbook-v0.1]]**.
 
