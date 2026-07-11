@@ -25,21 +25,24 @@ next_review: 2026-10-11 (季度 Review)
 - **手动**: `metaflac --set TAG=VALUE` 逐条写
 - **脚本自动化**: `apply-flac-tags.py <file.flac> --artist <id> --track <name> --isrc XX --upc XX` (待创建)
 
-### 0.3 8 艺人 ID 速查
+### 0.3 8 艺人 ID 速查 (官方映射, 来自 `八位藝人流量權重曲風映射報告.md`)
 
-| ID | 中文名 | 英文名 | 主要语言 | 流派 (主+副) | 厂牌定位 |
-|---|---|---|---|---|---|
-| A1 | 微霓 | Weini | zh-Hant + zh-Hans | Pop + World | Haevo 唯一华语, 旗舰 |
-| A2 | Aube Valois | Aube Valois | fr + en | Ambient + Classical | Haevo Ambient 旗舰 |
-| A3 | 待填 | TBD | TBD | TBD | Haevo 厂牌待规划 |
-| A4 | 待填 | TBD | TBD | TBD | Haevo 厂牌待规划 |
-| A5 | 待填 | TBD | TBD | TBD | Haevo 厂牌待规划 |
-| A6 | 待填 | TBD | TBD | TBD | Haevo 厂牌待规划 |
-| A7 | 待填 | TBD | TBD | TBD | Haevo 厂牌待规划 |
-| A8 | 待填 | TBD | TBD | TBD | Haevo 厂牌待规划 |
+> **Genre 全 RouteNote v4.2 39-list 合法映射**, Subgenre 自由填入用于精准路由
+> **流量权重**: 2 高成长 (#8, #44-47) + 3 亚洲核心 (#29-33) + 3 长尾功能 (#29-50)
 
-> **待 Kieran 填**: A3-A8 的中文名 / 英文名 / 主要语言 / 流派 / 厂牌定位
-> 提交 RouteNote/DistroKid 等平台时, 必须每个艺人有独立 profile
+| ID | 中文名 | 英文名 | 主要语言 | 主 Genre | 副 Genre | Subgenre | 流量权重 |
+|---|---|---|---|---|---|---|---|
+| A1 | Rowen Vale | Rowen Vale | en | Alternative | Singer/Songwriter | Folk Pop;Indie Folk;Singer-Songwriter | **#8 Indie Rock** (高成长) |
+| A2 | Lune Veya | Lune Veya | en | Pop | Alternative | Dark Pop;Bedroom Pop | **#31 Bedroom Pop** |
+| A3 | 微霓 (薇婭) | Weini | zh-Hant + zh-Hans | Pop | World | Mandopop;華語流行;Taiwanese Pop | **#29 Mandopop** |
+| A4 | Shibata Luna | Shibata Luna | ja + en | J-Pop | Pop | City Pop;J-Pop | **#33 City Pop** |
+| A5 | Haevo | Haevo | en + instrumental | Electronic | Alternative | Ambient;Dark Ambient;Lofi Ambient;Drone | **#50 Ambient Electronic** |
+| A6 | Oaeli | Oaeli | es + en | Latin | Alternative | Latin Pop;Spanish Pop | **#44 Latin Pop** |
+| A7 | Aube Valois | Aube Valois | fr + en | Pop | - | French Chanson;Chanson Française | **#29-35 Pop 类** |
+| A8 | Veloria Senda | Veloria Senda | es + en | Latin | World | Latin Folk;World Music | **#44-47 Latin 类** |
+
+> **原始资料**: `八位藝人流量權重曲風映射報告.md` (HKYOB 根目录, v2.0 / 2026-07-10)
+> **发行优先级**: 🥇 P0 = Rowen Vale + Weini / 🥈 P1 = Veloria Senda + Lune Veya + Shibata Luna / 🥉 P2 = Oaeli + Aube Valois + Haevo
 
 ---
 
@@ -153,28 +156,142 @@ next_review: 2026-10-11 (季度 Review)
 ## 3. 8 艺人 Profile 表 (Haevo Records 标准)
 
 > **本表是厂牌级 SOP**, 歌曲名 / Track 编号 / 歌词 等 Track 特有字段**留空, 等具体 Track 锁定后填**。
+> **数据来源**: `八位藝人流量權重曲風映射報告.md` (HKYOB 根目录, v2.0 / 2026-07-10, 官方映射)
+> **Genre 全 RouteNote v4.2 39-list 合法映射**
 
-### A1 — 微霓 (Weini) ✅ 已知完整
+### A1 — Rowen Vale (Indie Folk / Folk Pop) 🥇 P0
 
 | 字段 | 值 |
 |---|---|
-| 中文名 | 微霓 |
+| 中文名 | (无中文名, 英文) |
+| 英文名 | Rowen Vale |
+| ARTIST tag | `Rowen Vale` |
+| 主要语言 | en |
+| 主 Genre | Alternative |
+| 副 Genre | Singer/Songwriter |
+| Subgenre (RouteNote 自由填) | Folk Pop;Indie Folk;Singer-Songwriter |
+| Top 50 流量权重 | **#8 Indie Rock** (高成长, Save Rate 高) |
+| 目标市场 | 全球 (英美 Indie 受众) |
+| COMPOSER / LYRICIST / PRODUCER | XIAOYANG ZHANG (Haevo 默认) |
+| LABEL | Haevo Records |
+| AI_DISCLOSURE | AI-generated music under Haevo Project |
+| Artist Profile URL (RouteNote) | TBD |
+| Catalog Prefix | `HR-A1-T{NN}` |
+| Brand Bible | TBD (建议创建) |
+| 发行优先级 | 🥇 P0 |
+
+### A2 — Lune Veya (Dark Pop / Bedroom Pop) 🥈 P1
+
+| 字段 | 值 |
+|---|---|
+| 中文名 | (无中文名, 英文) |
+| 英文名 | Lune Veya |
+| ARTIST tag | `Lune Veya` |
+| 主要语言 | en |
+| 主 Genre | Pop |
+| 副 Genre | Alternative |
+| Subgenre | Dark Pop;Bedroom Pop |
+| Top 50 流量权重 | **#31 Bedroom Pop** (影视配乐、Lo-fi 场景需求强) |
+| 目标市场 | 全球 (Bedroom Pop 受众) |
+| 转媒体潜力 | 高 (影视配乐需求强) |
+| COMPOSER / LYRICIST / PRODUCER | XIAOYANG ZHANG (Haevo 默认) |
+| LABEL | Haevo Records |
+| AI_DISCLOSURE | AI-generated music under Haevo Project |
+| Artist Profile URL (RouteNote) | TBD |
+| Catalog Prefix | `HR-A2-T{NN}` |
+| Brand Bible | TBD (建议创建) |
+| 发行优先级 | 🥈 P1 |
+
+### A3 — 微霓 (Weini, 薇婭) (Mandopop) 🥇 P0 ✅ 已实战
+
+| 字段 | 值 |
+|---|---|
+| 中文名 | 微霓 (薇婭) |
 | 英文名 | Weini |
 | ARTIST tag | `微霓 (Weini)` |
 | 主要语言 | zh-Hant (主) + zh-Hans (副) |
 | 主 Genre | Pop |
 | 副 Genre | World |
-| Sub-genre (Brand DNA) | Chinese Folk;Mandopop;Alternative R&B |
+| Subgenre (官方映射) | **Mandopop;華語流行;Taiwanese Pop** |
+| ⚠️ Brand Bible v0.3 旧 Subgenre | Chinese Folk;Mandopop;Alternative R&B (待修正) |
+| Top 50 流量权重 | **#29 Mandopop** (Spotify TW 算法推荐高) |
+| 目标市场 | 台湾 + 中国大陆 + 东南亚 |
 | COMPOSER / LYRICIST / PRODUCER | XIAOYANG ZHANG |
 | LABEL | Haevo Records |
 | AI_DISCLOSURE | AI-generated music under Haevo Project |
 | Artist Profile URL (RouteNote) | TBD |
-| Catalog Prefix | `HR-A1-T{NN}` |
+| Catalog Prefix | `HR-A3-T{NN}` |
 | Brand Bible | `10-Projects/Music-RN-Research-2026/2026-07-11-Weini-Brand-Bible-v0.3.md` |
-| 已发行 Track | T01 长安月 (实验轨), T02 窗與燈 (2026-09-11) |
-| **Track 02 示例 FLAC** | `10-Projects/Music-RN-Research-2026/delivery/T02/窗與燈-A1-mastered.flac` |
+| 已发行 Track | T01 长安月 (实验轨), T02 窗與燈 (2026-09-11, In Review) |
+| **Track 02 示例 FLAC** | `10-Projects/Music-RN-Research-2026/delivery/T02/窗與燈-A3-mastered.flac` |
+| 发行优先级 | 🥇 P0 |
 
-### A2 — Aube Valois ✅ 已知 (Ambient 旗舰)
+### A4 — Shibata Luna (City Pop / J-Pop) 🥈 P1
+
+| 字段 | 值 |
+|---|---|
+| 中文名 | (无中文名) |
+| 英文名 | Shibata Luna |
+| ARTIST tag | `Shibata Luna` |
+| 主要语言 | ja (主) + en (副) |
+| 主 Genre | J-Pop |
+| 副 Genre | Pop |
+| Subgenre | City Pop;J-Pop |
+| Top 50 流量权重 | **#33 City Pop** (Spotify JP/TW 流量稳定) |
+| 目标市场 | 日本 + 全球 J-Pop |
+| COMPOSER / LYRICIST / PRODUCER | XIAOYANG ZHANG (Haevo 默认) |
+| LABEL | Haevo Records |
+| AI_DISCLOSURE | AI-generated music under Haevo Project |
+| Artist Profile URL (RouteNote) | TBD |
+| Catalog Prefix | `HR-A4-T{NN}` |
+| Brand Bible | TBD (建议创建) |
+| 发行优先级 | 🥈 P1 |
+
+### A5 — Haevo (Ambient / Ambient Electronic) 🥉 P2
+
+| 字段 | 值 |
+|---|---|
+| 中文名 | Haevo (厂牌同名艺人) |
+| 英文名 | Haevo |
+| ARTIST tag | `Haevo` |
+| 主要语言 | en + instrumental |
+| 主 Genre | Electronic |
+| 副 Genre | Alternative |
+| Subgenre | Ambient;Dark Ambient;Lofi Ambient;Drone |
+| Top 50 流量权重 | **#50 Ambient Electronic** (长尾稳定, 功能型场景需求强) |
+| 目标市场 | 全球 Ambient / 功能型 (专注 / 睡眠 / 冥想) |
+| 功能型场景 | 专注、睡眠、冥想 |
+| 长尾收藏率 | 高 |
+| COMPOSER / LYRICIST / PRODUCER | XIAOYANG ZHANG (Haevo 默认) |
+| LABEL | Haevo Records (厂牌 = 艺人同名) |
+| AI_DISCLOSURE | AI-generated music under Haevo Project |
+| Artist Profile URL (RouteNote) | TBD |
+| Catalog Prefix | `HR-A5-T{NN}` |
+| Brand Bible | TBD (建议创建) |
+| 发行优先级 | 🥉 P2 (长尾稳定) |
+
+### A6 — Oaeli (Spanish Ambient Pop / Latin) 🥉 P2
+
+| 字段 | 值 |
+|---|---|
+| 中文名 | (无中文名) |
+| 英文名 | Oaeli |
+| ARTIST tag | `Oaeli` |
+| 主要语言 | es (主) + en (副) |
+| 主 Genre | Latin |
+| 副 Genre | Alternative |
+| Subgenre | Latin Pop;Spanish Pop |
+| Top 50 流量权重 | **#44 Latin Pop** (西班牙 + 拉美 + 全球) |
+| 目标市场 | 西班牙 + 拉美 + 全球 |
+| COMPOSER / LYRICIST / PRODUCER | XIAOYANG ZHANG (Haevo 默认) |
+| LABEL | Haevo Records |
+| AI_DISCLOSURE | AI-generated music under Haevo Project |
+| Artist Profile URL (RouteNote) | TBD |
+| Catalog Prefix | `HR-A6-T{NN}` |
+| Brand Bible | TBD (建议创建) |
+| 发行优先级 | 🥉 P2 |
+
+### A7 — Aube Valois (French Chanson / Pop) 🥉 P2
 
 | 字段 | 值 |
 |---|---|
@@ -182,90 +299,51 @@ next_review: 2026-10-11 (季度 Review)
 | 英文名 | Aube Valois |
 | ARTIST tag | `Aube Valois` |
 | 主要语言 | fr (主) + en (副) |
-| 主 Genre | Ambient |
-| 副 Genre | Classical |
-| Sub-genre | Cinematic Ambient;Modern Classical;Drone |
+| 主 Genre | Pop |
+| 副 Genre | - (无副 Genre) |
+| Subgenre | French Chanson;Chanson Française |
+| Top 50 流量权重 | **#29-35 Pop 类** (法语区 + 欧洲 + 中文抒情跨域) |
+| 目标市场 | 法语区 + 欧洲 |
+| 跨域潜力 | 法语市场 + 中文抒情跨域, 触及欧亚听众 |
 | COMPOSER / LYRICIST / PRODUCER | XIAOYANG ZHANG (待确认是否同一人) |
 | LABEL | Haevo Records |
 | AI_DISCLOSURE | AI-generated music under Haevo Project |
 | Artist Profile URL (RouteNote) | TBD |
-| Catalog Prefix | `HR-A2-T{NN}` |
-| Brand Bible | TBD (建议创建 `2026-XX-XX-Aube-Valois-Brand-Bible-v0.1.md`) |
+| Catalog Prefix | `HR-A7-T{NN}` |
+| Brand Bible | TBD (建议创建) |
 | 已发行 Track | T01 (2026-07-09 LOCKED, 4:30 ambient) |
 | **QC 标准** | `suno-5.5-ambient-workflow` skill (Aube v4 master pipeline 已验证) |
+| 发行优先级 | 🥉 P2 |
 
-### A3 — 待填 ⚠️
+### A8 — Veloria Senda (Latin Folk / World) 🥈 P1
 
 | 字段 | 值 |
 |---|---|
-| 中文名 | (待 Kieran 填) |
-| 英文名 | (待 Kieran 填) |
-| ARTIST tag | `{中文名} ({英文名})` |
-| 主要语言 | (待 Kieran 填) |
-| 主 Genre | (待 Kieran 填) |
-| 副 Genre | (待 Kieran 填) |
-| Sub-genre | (待 Kieran 填) |
-| COMPOSER / LYRICIST / PRODUCER | XIAOYANG ZHANG (默认) |
+| 中文名 | (无中文名) |
+| 英文名 | Veloria Senda |
+| ARTIST tag | `Veloria Senda` |
+| 主要语言 | es (主) + en (副) |
+| 主 Genre | Latin |
+| 副 Genre | World |
+| Subgenre | Latin Folk;World Music |
+| Top 50 流量权重 | **#44-47 Latin 类** (拉美 + 全球) |
+| 目标市场 | 拉丁美洲 + 全球 |
+| COMPOSER / LYRICIST / PRODUCER | XIAOYANG ZHANG (Haevo 默认) |
 | LABEL | Haevo Records |
 | AI_DISCLOSURE | AI-generated music under Haevo Project |
-| Artist Profile URL | TBD |
-| Catalog Prefix | `HR-A3-T{NN}` |
-| Brand Bible | TBD |
-
-### A4 — 待填 ⚠️
-
-| 字段 | 值 |
-|---|---|
-| 中文名 | (待 Kieran 填) |
-| 英文名 | (待 Kieran 填) |
-| ARTIST tag | `{中文名} ({英文名})` |
-| 主要语言 | (待 Kieran 填) |
-| 主 Genre | (待 Kieran 填) |
-| 副 Genre | (待 Kieran 填) |
-| Sub-genre | (待 Kieran 填) |
-| COMPOSER / LYRICIST / PRODUCER | XIAOYANG ZHANG (默认) |
-| LABEL | Haevo Records |
-| AI_DISCLOSURE | AI-generated music under Haevo Project |
-| Artist Profile URL | TBD |
-| Catalog Prefix | `HR-A4-T{NN}` |
-| Brand Bible | TBD |
-
-### A5 — 待填 ⚠️
-
-| 字段 | 值 |
-|---|---|
-| ... | (待 Kieran 填, 同 A3 模板) |
-| Catalog Prefix | `HR-A5-T{NN}` |
-
-### A6 — 待填 ⚠️
-
-| 字段 | 值 |
-|---|---|
-| ... | (待 Kieran 填, 同 A3 模板) |
-| Catalog Prefix | `HR-A6-T{NN}` |
-
-### A7 — 待填 ⚠️
-
-| 字段 | 值 |
-|---|---|
-| ... | (待 Kieran 填, 同 A3 模板) |
-| Catalog Prefix | `HR-A7-T{NN}` |
-
-### A8 — 待填 ⚠️
-
-| 字段 | 值 |
-|---|---|
-| ... | (待 Kieran 填, 同 A3 模板) |
+| Artist Profile URL (RouteNote) | TBD |
 | Catalog Prefix | `HR-A8-T{NN}` |
+| Brand Bible | TBD (建议创建) |
+| 发行优先级 | 🥈 P1 |
 
 ---
 
 ## 4. metaflac 命令模板 (Copy-Paste 可用)
 
-### 4.1 单文件批量设置 (示例: A1 微霓 Track 02)
+### 4.1 单文件批量设置 (示例: A3 微霓 Track 02)
 
 ```bash
-FILE="窗與燈-A1-mastered.flac"
+FILE="窗與燈-A3-mastered.flac"
 
 # 清空 tags (慎用, 会清除 PICTURE)
 metaflac --remove-all-tags "$FILE"
@@ -287,7 +365,7 @@ metaflac --set-tag="TITLE=窗與燈" \
          --set-tag="PRODUCER=XIAOYANG ZHANG" \
          --set-tag="LABEL=Haevo Records" \
          --set-tag="PUBLISHER=Haevo Records" \
-         --set-tag="CATALOGNUMBER=HR-A1-T02" \
+         --set-tag="CATALOGNUMBER=HR-A3-T02" \
          --set-tag="ISRC=GXFHP2653163" \
          --set-tag="UPC=5064041048082" \
          --set-tag="AI_DISCLOSURE=AI-generated music under Haevo Project" \
@@ -296,7 +374,7 @@ metaflac --set-tag="TITLE=窗與燈" \
 
 # 自定义 tag (LYRICS / SUBGENRE)
 metaflac --set-tag="LYRICS=完整 8 段繁体歌词..." \
-         --set-tag="SUBGENRE=Chinese Folk;Mandopop;Alternative R&B" \
+         --set-tag="SUBGENRE=Mandopop;華語流行;Taiwanese Pop" \
          "$FILE"
 
 # Cover (3000x3000 PNG)
@@ -370,17 +448,20 @@ metaflac --list "$FILE" | head -80
 
 | 日期 | 事件 |
 |---|---|
-| 2026-07-11 | v1.0 首版, 8 艺人 SOP 框架, 28 项必备 tags, A1 微霓 + A2 Aube Valois 已知完整, A3-A8 待 Kieran 填 |
+| 2026-07-11 | v1.0 首版框架, 28 项必备 tags, A1+A2 已知 + A3-A8 待填 |
 | 2026-07-11 | Track 02 实战验证: FLAC 文件 tags 2 条 (仅 encoder + Suno id), 平台 dashboard 28 条 tags 完整, In Review 正常推进 |
+| 2026-07-11 | **v1.0 完整化**: 从 `八位藝人流量權重曲風映射報告.md` 读 8 艺人完整资料, § 0.3 + § 3 表全部填齐 (Rowen Vale / Lune Veya / Weini / Shibata Luna / Haevo / Oaeli / Aube Valois / Veloria Senda), 包含 Top 50 流量权重 + 发行优先级 + 目标市场 |
+| 2026-07-11 | **发现 Subgenre 不一致**: Brand Bible v0.3 给微霓 Subgenre = `Chinese Folk;Mandopop;Alternative R&B`, 官方映射 = `Mandopop;華語流行;Taiwanese Pop`. **需修正 Brand Bible v0.3** (待 Kieran 拍板) |
 | 2026-Q4 (待) | 第一次季度 Review, 收集 5+ Track 数据后调 tags 列表 |
 
 ---
 
 **标准版本**: v1.0 LOCKED
 **下次 Review**: 2026-10-11 (季度)
-**责任人**: bot-b (自动跑 QC + Tag 写入脚本) + Kieran (填 8 艺人 Profile + Brand DNA)
+**责任人**: bot-b (自动跑 QC + Tag 写入脚本) + Kieran (拍板 8 艺人 Brand DNA + 创建 7 个 Brand Bible)
 
 **待办**:
-1. Kieran 填 A3-A8 艺人 Profile (中文名 / 英文名 / 语言 / Genre)
-2. 创建 `apply-flac-tags.py` 脚本 (参数化: --artist + --track + --isrc + --upc)
-3. 各艺人 Brand Bible 创建 (除已知的 A1 v0.3 + A2 待创建)
+1. Kieran 拍板 **Brand Bible v0.3 微霓 Subgenre 修正** (官方 vs 旧值)
+2. 创建 7 个艺人 Brand Bible (A1/A2/A4/A5/A6/A7/A8, A3 微霓已有 v0.3)
+3. 创建 `apply-flac-tags.py` 脚本 (参数化: --artist A1-A8 + --track + --isrc + --upc)
+4. 整理 `八位藝人流量權重曲風映射報告.md` 进 30-Resources/ (现只在根目录)
