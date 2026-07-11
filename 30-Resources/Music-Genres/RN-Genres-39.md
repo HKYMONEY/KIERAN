@@ -1,4 +1,14 @@
-# RouteNote 音樂發行 39 大主曲風指南
+---
+status: locked
+topic: music-genre
+source: routenote
+source_version: v4.2
+created: 2026-07-10
+updated: 2026-07-11
+tags: [music-distribution, routenote, genre, locked]
+---
+
+# 39 大主曲風指南 (RouteNote)
 
 > **官方標準**：RouteNote Genre List v4.2
 > **用途**：發行時主曲風（Primary）+ 次曲風（Secondary）必填項的官方選項
