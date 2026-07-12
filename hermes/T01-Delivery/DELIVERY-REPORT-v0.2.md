@@ -63,12 +63,11 @@ Stage 2: loudnorm 2-pass — LUFS -13.99 / TP -1.88 / LRA 2.80 (locked)
 | 25 | BRAND_TAGLINE | Every song feels like Tokyo after the rain. |
 | 26 | AI_DISCLOSURE | AI-generated music under Haevo Project (Suno 5.5 Pro) |
 | 27 | ENCODED_BY | Lavf60.16.100 + ffmpeg loudnorm 2-pass |
-| 28 | RELEASE_DATE | 2026-08-28 |
-| 29 | RATING | Explicit free |
-| 30 | SAMPLERATE | 44100 |
-| 31 | BITDEPTH | 24 |
+| 28 | RATING | Explicit free |
+| 29 | SAMPLERATE | 44100 |
+| 30 | BITDEPTH | 24 |
 
-> **UPC + ISRC intentionally NOT embedded in FLAC tags** — DSP/Routenote assigns these on submission. Pre-filling risks mismatch with assigned codes. Document in SOP, not in tag.
+> **UPC + ISRC + RELEASE_DATE intentionally NOT embedded in FLAC tags** — DSP/Routenote assigns UPC/ISRC on submission; release date is set in submission form. Pre-filling risks mismatch with submission-time data. Documented in SOP, not in tag.
 
 ## 4. Cover Art
 
@@ -143,6 +142,7 @@ Pipeline: Suno 5.5 Pro A1 (117s) → Extend B1 (206s) → Extend C1 (218s)
 - v0.2 (2026-07-13): Cover embedded (3000x3000) + SAMPLERATE/BITDEPTH tags added → 92.6% (25 PASS + 2 WARN + 0 FAIL)
 - v0.3 (2026-07-13): **UPC + ISRC removed from FLAC tags** — DSP/Routenote assigns these on submission. Pre-filling risks mismatch. Kept in SOP, not in tag. 31 tags total.
 - v0.4 (2026-07-13): **BITDEPTH corrected 16 → 24** — actual FLAC is PCM_24 (Suno source 24-bit, no downconvert). FLAC tag BITDEPTH=24, all docs updated. Kieran caught my mistake.
+- v0.5 (2026-07-13): **RELEASE_DATE removed from FLAC tags** — release date set in Routenote submission form (Kieran: 2026-09-11 pending final confirm), not pre-filled in metadata. Same logic as UPC/ISRC. 30 tags total.
 
 ## 10. RouteNote Submission Guide
 
