@@ -53,22 +53,22 @@ Stage 2: loudnorm 2-pass — LUFS -13.99 / TP -1.88 / LRA 2.80 (locked)
 | 15 | PRODUCER | XIAOYANG ZHANG (Haevo AI Producer) |
 | 16 | ORGANIZATION | Haevo Records |
 | 17 | CATALOG | HR-A4-T01 |
-| 18 | ISRC | HR-A4-T01-2026-001 |
-| 19 | UPC | 0700000000009 |
-| 20 | COPYRIGHT | (C) 2026 Haevo Records |
-| 21 | PUBLISHER | Haevo Records Publishing |
-| 22 | BPM | 96 |
-| 23 | INITIALKEY | F# minor |
-| 24 | MOOD | Quiet, Adult Japanese Life Pop |
-| 25 | THEME | Tokyo midnight rain, convenience store, 4am commute |
-| 26 | VISUAL | Tokyo, late night, blue, glass reflection, warm lamp, 35mm film, rain, shallow DOF |
-| 27 | BRAND_TAGLINE | Every song feels like Tokyo after the rain. |
-| 28 | AI_DISCLOSURE | AI-generated music under Haevo Project (Suno 5.5 Pro) |
-| 29 | ENCODED_BY | Lavf60.16.100 + ffmpeg loudnorm 2-pass |
-| 30 | RELEASE_DATE | 2026-08-28 |
-| 31 | RATING | Explicit free |
-| 32 | SAMPLERATE | 44100 |
-| 33 | BITDEPTH | 16 |
+| 18 | COPYRIGHT | (C) 2026 Haevo Records |
+| 19 | PUBLISHER | Haevo Records Publishing |
+| 20 | BPM | 96 |
+| 21 | INITIALKEY | F# minor |
+| 22 | MOOD | Quiet, Adult Japanese Life Pop |
+| 23 | THEME | Tokyo midnight rain, convenience store, 4am commute |
+| 24 | VISUAL | Tokyo, late night, blue, glass reflection, warm lamp, 35mm film, rain, shallow DOF |
+| 25 | BRAND_TAGLINE | Every song feels like Tokyo after the rain. |
+| 26 | AI_DISCLOSURE | AI-generated music under Haevo Project (Suno 5.5 Pro) |
+| 27 | ENCODED_BY | Lavf60.16.100 + ffmpeg loudnorm 2-pass |
+| 28 | RELEASE_DATE | 2026-08-28 |
+| 29 | RATING | Explicit free |
+| 30 | SAMPLERATE | 44100 |
+| 31 | BITDEPTH | 16 |
+
+> **UPC + ISRC intentionally NOT embedded in FLAC tags** — DSP/Routenote assigns these on submission. Pre-filling risks mismatch with assigned codes. Document in SOP, not in tag.
 
 ## 4. Cover Art
 
@@ -141,6 +141,29 @@ Pipeline: Suno 5.5 Pro A1 (117s) → Extend B1 (206s) → Extend C1 (218s)
 
 - v0.1 (2026-07-13): Initial — 88.9% (24 PASS + 2 WARN + 1 FAIL=No Cover)
 - v0.2 (2026-07-13): Cover embedded (3000x3000) + SAMPLERATE/BITDEPTH tags added → 92.6% (25 PASS + 2 WARN + 0 FAIL)
+- v0.3 (2026-07-13): **UPC + ISRC removed from FLAC tags** — DSP/Routenote assigns these on submission. Pre-filling risks mismatch. Kept in SOP, not in tag. 31 tags total.
+
+## 10. RouteNote Submission Guide
+
+| Field | Value | Note |
+|---|---|---|
+| Track Title | 雨のあと (After the Rain) | exact match FLAC TITLE |
+| Artist | Shibata Luna | exact match FLAC ARTIST |
+| Album | Luna Nightscape Vol. 1 | exact match FLAC ALBUM |
+| Track # | 1 | TRACKNUMBER=01 |
+| **Primary Genre** | **J-Pop** | ⭐ NOT "Pop" — affects Spotify algorithm entry |
+| **Secondary Genre** | **Pop** | ⭐ NOT "Indie" — broader recommendation pool |
+| Language | Japanese | matches FLAC LANGUAGE=jpn |
+| Explicit Lyrics | No | matches RATING=Explicit free |
+| Release Date | 2026-08-28 (TBD pending Kieran final) | Kieran indicated 9/11 possibility — confirm before submit |
+| Copyright | (C) 2026 Haevo Records | matches FLAC COPYRIGHT |
+| Publisher | Haevo Records Publishing | matches FLAC PUBLISHER |
+| Cover Art | 3000×3000 JPEG | embedded in FLAC + upload separately |
+| Audio | FLAC 16-bit/44.1 kHz | upload as-is (Routenote accepts FLAC) |
+| RouteNote tier | **Premium** ($10/yr) | keep 100% revenue — NOT Free (15% cut) |
+| Lyrics upload | Required: upload .txt of ja lyrics | Routenote + Spotify lyrics sync |
+
+> **UPC + ISRC**: Leave BLANK in FLAC tags. Routenote generates these on submission. Document assigned codes in `hermes/T01-Delivery/UPC-ISRC-Assignment.md` after submission.
 
 ## 10. Next Track Plan
 
