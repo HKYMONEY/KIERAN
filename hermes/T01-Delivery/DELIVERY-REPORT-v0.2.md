@@ -18,7 +18,7 @@
 | Duration | 218.44s (3:38) |
 | Format | FLAC (lossless) |
 | Sample rate | 44.1 kHz |
-| Bit depth | 16 (FLAC internal 24-bit) |
+| Bit depth | 24 (FLAC internal PCM_24) |
 | Channels | Stereo (2) |
 
 ## 2. Loudness Compliance (v1.1.1 Quiet Route)
@@ -66,7 +66,7 @@ Stage 2: loudnorm 2-pass — LUFS -13.99 / TP -1.88 / LRA 2.80 (locked)
 | 28 | RELEASE_DATE | 2026-08-28 |
 | 29 | RATING | Explicit free |
 | 30 | SAMPLERATE | 44100 |
-| 31 | BITDEPTH | 16 |
+| 31 | BITDEPTH | 24 |
 
 > **UPC + ISRC intentionally NOT embedded in FLAC tags** — DSP/Routenote assigns these on submission. Pre-filling risks mismatch with assigned codes. Document in SOP, not in tag.
 
@@ -142,6 +142,7 @@ Pipeline: Suno 5.5 Pro A1 (117s) → Extend B1 (206s) → Extend C1 (218s)
 - v0.1 (2026-07-13): Initial — 88.9% (24 PASS + 2 WARN + 1 FAIL=No Cover)
 - v0.2 (2026-07-13): Cover embedded (3000x3000) + SAMPLERATE/BITDEPTH tags added → 92.6% (25 PASS + 2 WARN + 0 FAIL)
 - v0.3 (2026-07-13): **UPC + ISRC removed from FLAC tags** — DSP/Routenote assigns these on submission. Pre-filling risks mismatch. Kept in SOP, not in tag. 31 tags total.
+- v0.4 (2026-07-13): **BITDEPTH corrected 16 → 24** — actual FLAC is PCM_24 (Suno source 24-bit, no downconvert). FLAC tag BITDEPTH=24, all docs updated. Kieran caught my mistake.
 
 ## 10. RouteNote Submission Guide
 
@@ -159,7 +160,7 @@ Pipeline: Suno 5.5 Pro A1 (117s) → Extend B1 (206s) → Extend C1 (218s)
 | Copyright | (C) 2026 Haevo Records | matches FLAC COPYRIGHT |
 | Publisher | Haevo Records Publishing | matches FLAC PUBLISHER |
 | Cover Art | 3000×3000 JPEG | embedded in FLAC + upload separately |
-| Audio | FLAC 16-bit/44.1 kHz | upload as-is (Routenote accepts FLAC) |
+| Audio | FLAC 24-bit/44.1 kHz | upload as-is (Routenote accepts FLAC) |
 | RouteNote tier | **Premium** ($10/yr) | keep 100% revenue — NOT Free (15% cut) |
 | Lyrics upload | Required: upload .txt of ja lyrics | Routenote + Spotify lyrics sync |
 
