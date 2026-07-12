@@ -18,7 +18,7 @@
 | Duration | 218.44s (3:38) |
 | Format | FLAC (lossless) |
 | Sample rate | 44.1 kHz |
-| Bit depth | 24 (FLAC internal PCM_24) |
+| Bit depth | 16 (FLAC internal PCM_16) |
 | Channels | Stereo (2) |
 
 ## 2. Loudness Compliance (v1.1.1 Quiet Route)
@@ -65,7 +65,8 @@ Stage 2: loudnorm 2-pass — LUFS -13.99 / TP -1.88 / LRA 2.80 (locked)
 | 27 | ENCODED_BY | Lavf60.16.100 + ffmpeg loudnorm 2-pass |
 | 28 | RATING | Explicit free |
 | 29 | SAMPLERATE | 44100 |
-| 30 | BITDEPTH | 24 |
+| 30 | BITDEPTH | 16 |
+| 31 | ENCODER | Lavf60.16.100 + soxr resampler (24→16) |
 
 > **UPC + ISRC + RELEASE_DATE intentionally NOT embedded in FLAC tags** — DSP/Routenote assigns UPC/ISRC on submission; release date is set in submission form. Pre-filling risks mismatch with submission-time data. Documented in SOP, not in tag.
 
@@ -143,6 +144,7 @@ Pipeline: Suno 5.5 Pro A1 (117s) → Extend B1 (206s) → Extend C1 (218s)
 - v0.3 (2026-07-13): **UPC + ISRC removed from FLAC tags** — DSP/Routenote assigns these on submission. Pre-filling risks mismatch. Kept in SOP, not in tag. 31 tags total.
 - v0.4 (2026-07-13): **BITDEPTH corrected 16 → 24** — actual FLAC is PCM_24 (Suno source 24-bit, no downconvert). FLAC tag BITDEPTH=24, all docs updated. Kieran caught my mistake.
 - v0.5 (2026-07-13): **RELEASE_DATE removed from FLAC tags** — release date set in Routenote submission form. **2026-09-11 confirmed by Kieran** as Luna T01 single debut. Same logic as UPC/ISRC. 30 tags total.
+- v0.7 (2026-07-13): **24→16 bit downconvert + new master FLAC pushed to vault**. Kieran requested 16-bit for Routenote compatibility (DSP native). soxr resampler used (precision=28). LUFS -14.2 / TP -1.0 / LRA 2.6 (was 2.8 at 24-bit, sub-bit noise floor dropped — still v1.1.1 Quiet route 2.5-12 PASS). 30→31 tags (added ENCODER tracking). 24-bit master archived at `hermes/T01-Delivery/archive/雨のあと-24bit-master.flac`. File size 42 MB → 23 MB.
 
 ## 10. RouteNote Submission Guide
 
@@ -160,7 +162,7 @@ Pipeline: Suno 5.5 Pro A1 (117s) → Extend B1 (206s) → Extend C1 (218s)
 | Copyright | (C) 2026 Haevo Records | matches FLAC COPYRIGHT |
 | Publisher | Haevo Records Publishing | matches FLAC PUBLISHER |
 | Cover Art | 3000×3000 JPEG | embedded in FLAC + upload separately |
-| Audio | FLAC 24-bit/44.1 kHz | upload as-is (Routenote accepts FLAC) |
+| Audio | FLAC 16-bit/44.1 kHz | upload as-is (Routenote accepts FLAC) |
 | RouteNote tier | **Premium** ($10/yr) | keep 100% revenue — NOT Free (15% cut) |
 | Lyrics upload | Required: upload .txt of ja lyrics | Routenote + Spotify lyrics sync |
 
