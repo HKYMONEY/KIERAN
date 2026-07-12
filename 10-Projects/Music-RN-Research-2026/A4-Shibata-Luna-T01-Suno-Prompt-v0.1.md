@@ -10,6 +10,7 @@ depends_on:
   - 10-Projects/Music-RN-Research-2026/A4-Shibata-Luna-Track-01-Playbook-v0.1.md
   - hermes/2026-07-13-Shibata-Luna-Status-Expansion-Report-v0.3.md
 style_influence: 75-85%
+weirdness: 35 (low-medium, 保留 Dream Pop 氛围气质)
 length: 4:00 streaming single
 ---
 
