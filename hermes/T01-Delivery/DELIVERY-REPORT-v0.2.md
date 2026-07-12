@@ -142,7 +142,7 @@ Pipeline: Suno 5.5 Pro A1 (117s) → Extend B1 (206s) → Extend C1 (218s)
 - v0.2 (2026-07-13): Cover embedded (3000x3000) + SAMPLERATE/BITDEPTH tags added → 92.6% (25 PASS + 2 WARN + 0 FAIL)
 - v0.3 (2026-07-13): **UPC + ISRC removed from FLAC tags** — DSP/Routenote assigns these on submission. Pre-filling risks mismatch. Kept in SOP, not in tag. 31 tags total.
 - v0.4 (2026-07-13): **BITDEPTH corrected 16 → 24** — actual FLAC is PCM_24 (Suno source 24-bit, no downconvert). FLAC tag BITDEPTH=24, all docs updated. Kieran caught my mistake.
-- v0.5 (2026-07-13): **RELEASE_DATE removed from FLAC tags** — release date set in Routenote submission form (Kieran: 2026-09-11 pending final confirm), not pre-filled in metadata. Same logic as UPC/ISRC. 30 tags total.
+- v0.5 (2026-07-13): **RELEASE_DATE removed from FLAC tags** — release date set in Routenote submission form. **2026-09-11 confirmed by Kieran** as Luna T01 single debut. Same logic as UPC/ISRC. 30 tags total.
 
 ## 10. RouteNote Submission Guide
 
@@ -156,7 +156,7 @@ Pipeline: Suno 5.5 Pro A1 (117s) → Extend B1 (206s) → Extend C1 (218s)
 | **Secondary Genre** | **Pop** | ⭐ NOT "Indie" — broader recommendation pool |
 | Language | Japanese | matches FLAC LANGUAGE=jpn |
 | Explicit Lyrics | No | matches RATING=Explicit free |
-| Release Date | 2026-08-28 (TBD pending Kieran final) | Kieran indicated 9/11 possibility — confirm before submit |
+| Release Date | **2026-09-11** ✅ Kieran confirmed (Asia/Shanghai) | Luna series T01 single debut |
 | Copyright | (C) 2026 Haevo Records | matches FLAC COPYRIGHT |
 | Publisher | Haevo Records Publishing | matches FLAC PUBLISHER |
 | Cover Art | 3000×3000 JPEG | embedded in FLAC + upload separately |
@@ -165,6 +165,26 @@ Pipeline: Suno 5.5 Pro A1 (117s) → Extend B1 (206s) → Extend C1 (218s)
 | Lyrics upload | Required: upload .txt of ja lyrics | Routenote + Spotify lyrics sync |
 
 > **UPC + ISRC**: Leave BLANK in FLAC tags. Routenote generates these on submission. Document assigned codes in `hermes/T01-Delivery/UPC-ISRC-Assignment.md` after submission.
+
+## 11. Release Strategy (2026-09-11)
+
+**Release Date**: Friday, 2026-09-11 (Asia/Shanghai)
+
+| Reason | Note |
+|---|---|
+| Day-of-week | Friday = Spotify editorial review window (Tue-Wed listening peak before weekend) |
+| Asian timezone | 09-11 = Asia Friday midnight, US Thursday afternoon = global launch coverage |
+| Marketing buffer | 8 weeks from T01 delivery (07-13) → ample time for cover promotion + Spotify for Artists pitch |
+| Luna series rollout | T01=T01 single → T02 candidate = 10-16 (5 weeks later) → maintains Adult Japanese Life Pop momentum |
+
+**Pre-launch checklist** (T-7 to T-1):
+- T-7 (09-04): Submit to Routenote Premium (lead time 5-7 days for distribution setup)
+- T-5 (09-06): Spotify for Artists pitch — mood Quiet/Reflective/Intimate + sub-genre City Pop/Dream Pop
+- T-3 (09-08): Apple Music for Artists metadata verify
+- T-1 (09-10): Final QC pass — verify Routenote preview audio matches `/tmp/luna-a1a4/` master
+- T0 (09-11): Release + social announcement
+
+**Kieran confirmed 2026-07-13** ✅
 
 ## 10. Next Track Plan
 
