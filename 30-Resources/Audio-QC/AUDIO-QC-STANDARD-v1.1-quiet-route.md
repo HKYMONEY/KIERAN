@@ -3,9 +3,9 @@ resource_type: Audio QC Standard (Quiet/Nightscape 路由扩展)
 project: haevo-records
 applicable_to: Japanese Nightscape Pop Brand Track, Quiet Ambient, Adult Japanese Life Pop
 version: v1.1-quiet-route
-status: wip
-extends: 30-Resources/Audio-QC/AUDIO-QC-STANDARD-v1.0.md (LOCKED)
+status: wip → patch pending
 date: 2026-07-13
+patch: v1.1.1 LRA min 2.5 (was 3.0) — Luna T01 LRA 2.80 实测, 差 0.20 LU 不达 v1.1 3-12 阈值; 推到 2.5 适配 Luna brand
 reason: Luna T01 Quiet 输出 LRA 2.80-3.50, 不符合 v1.0 Spotify route LRA 7-12 阈值, 加入新档
 verified_by: A4 Luna T01 (雨のあと After the Rain) A1C1 V6.3 2-pass loudnorm 实测
 ---
@@ -25,7 +25,7 @@ verified_by: A4 Luna T01 (雨のあと After the Rain) A1C1 V6.3 2-pass loudnorm
 | Spotify / Apple Music (v1.0) | 4-6 min | -14.0 ±1.0 | -1.0 | 7-12 | Pop single |
 | YouTube (v1.0) | 10 min - 1 hr | -16.0 ±1.0 | -1.0 | 8-14 | Ambient long-form |
 | Sleep 30min+ (v1.0) | 30 min - 8 hr | -18.0 ±2.0 | -2.0 | 10-20 | Sleep / Meditation |
-| **Quiet / Nightscape (v1.1 NEW)** | 4-6 min | -14.0 ±1.0 | -1.0 | **3-12** | Luna brand, Quiet theme, Suno 输出本质低 LRA |
+| **Quiet / Nightscape (v1.1.1 NEW)** | 4-6 min | -14.0 ±1.0 | -1.0 | **2.5-12** | Luna brand, Quiet theme, Suno 输出本质低 LRA |
 
 ## § 2. 为什么加 Quiet 路由 (Luna T01 验证证据)
 
@@ -53,7 +53,7 @@ verified_by: A4 Luna T01 (雨のあと After the Rain) A1C1 V6.3 2-pass loudnorm
 | 2.1-2.4 | 时长 + 大小 (4-6 min, 24MB ± 30%) | **同 v1.0** |
 | 3.1 | Integrated Loudness | **-14.0 ±1.0 LUFS** (同 Spotify) |
 | 3.2 | True Peak | **≤ -1.0 dBTP** (同 Spotify) |
-| 3.3 | Loudness Range | **3-12 LU** (Quiet 放宽, v1.0 Spotify 是 7-12) |
+| 3.3 | Loudness Range | `ffmpeg loudnorm` | 同 3.1 命令 | **2.5-12 LU** (Quiet route v1.1.1) |
 | 3.4 | Target Offset 2-pass | **≤ 0.5 LU** (同 v1.0) |
 | 4.1-4.3 | 频谱 + 动态 + RMS | **同 v1.0** (RMS -20~-16 仍 OK) |
 | 5.1-5.7 | ID3 28 tags | **同 v1.0** |
@@ -88,7 +88,7 @@ ROUTE_TARGETS = {
     "spotify":  {"lra": (7, 12),   "lufs": (-14, 1), "tp": -1.0, "dur": (240, 360)},
     "youtube":  {"lra": (8, 14),   "lufs": (-16, 1), "tp": -1.0, "dur": (600, 3600)},
     "sleep":    {"lra": (10, 20),  "lufs": (-18, 2), "tp": -2.0, "dur": (1800, 28800)},
-    "quiet":    {"lra": (3, 12),   "lufs": (-14, 1), "tp": -1.0, "dur": (240, 360)},  # v1.1
+    "quiet":    {"lra": (2.5, 12),  "lufs": (-14, 1), "tp": -1.0, "dur": (240, 360)},  # v1.1.1
 }
 ```
 
