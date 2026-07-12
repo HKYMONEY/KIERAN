@@ -42,17 +42,9 @@ rock guitar / electric guitar distortion
 spoken word / intro credits / music credits
 ```
 
-## Title 候选（Kieran 拍）
+## Title LOCKED (Kieran 拍 2026-07-13)
 
-```
-- 雨のあと (After the Rain)
-- Midnight Tokyo
-- Glass City
-- 午前4時の東京 (4am Tokyo)
-- Blue Signal
-```
-
-回 1 句锁定 → v0.2。
+**雨のあと (After the Rain)**
 
 ## Lyrics (Time-Axis Sound Script, ja 单语)
 
