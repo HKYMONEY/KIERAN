@@ -1,6 +1,6 @@
 ---
-title: A6 Oaeli Track 01 Playbook v0.5
-version: v0.5
+title: A6 Oaeli Track 01 Playbook v0.6
+version: v0.6
 status: wip
 created: 2026-07-14
 updated: 2026-07-14
@@ -17,7 +17,9 @@ reference_locked: 2026-07-14
 reference_set: "Rigoberta Bandini; Natalia Lacunza; Cariño; Veintiuno (Rosalía 排除因 mega artist KPI 错位)"
 visual_locked: 2026-07-14
 visual_set: "摄影; Mediterranean暖色 (terracotta+dusty rose+sun-bleached gold); 女性背影 站立窗前/城市远景; tag line='Canta lo que no se dice al despertar'"
-kieran_signoff_required: "Suno Prompt + Lyrics SOP"
+suno_prompt_locked: 2026-07-14
+suno_prompt_set: "Genre: Spanish Ambient Pop; Mood: intimate dawn solitude; Instrumentation: soft acoustic guitar + light analog pads + ambient room tone (no reggaeton/trap/flamenco); BPM 84; Length 3:24; Vocal female es-MX breathy intimate"
+kieran_signoff_required: "Lyrics SOP"
 tags: [Oaeli, Track 01, Playbook, 9-11, wip] 
 ---
 
@@ -82,6 +84,20 @@ tags: [Oaeli, Track 01, Playbook, 9-11, wip]
 
 **Visual DNA v1.0 LOCKED = 2026-07-14**。
 
+## 2e. Suno Prompt v0.1 草稿（2026-07-14 LOCKED）✓
+
+| 字段 | LOCKED 值 |
+|---|---|
+| Genre Tag | Spanish Ambient Pop, intimate feminine vocal |
+| Mood | intimate, dawn solitude, hazy city awakening |
+| Instrumentation | soft acoustic guitar + light analog pads + ambient room tone (no reggaeton / no trap / no flamenco) |
+| Tempo | 84 BPM（区间中位）|
+| Length | 3:24（3-段 Latin Pop Standard）|
+| Vocal | female es-MX, breathy & intimate |
+
+**Suno Prompt v1.0 草稿 LOCKED = 2026-07-14**。
+**Round 1 试作 = D-28（2026-08-14），跑 4-8 段后 A&R 选 Best。**
+
 ## 2. 时间轴建议（D-56 ~ D+90）
 
 | 阶段 | 日期 | 工作 |
@@ -96,14 +112,9 @@ tags: [Oaeli, Track 01, Playbook, 9-11, wip]
 | **D+28** | 2026-10-09 | D+28 数据快照（Track 1 SOP § 性能回顾）|
 | **D+88** | 2026-12-08 | 性能回顾 v1（参考 micro artist artist-development D88 SOP）|
 
-## 3. 拍板区（Kieran 决策清单 · Sound DNA + Forbidden + Reference + Visual 已清）
+## 3. 拍板区（Kieran 决策清单 · Sound DNA + Forbidden + Reference + Visual + Suno Prompt 已清）
 
-⚠️ **Sound DNA 5 项 + Forbidden 4 项 + Reference 4 项 + Visual 4 项 LOCKED（2026-07-14）。下一阶段拍板字段**：
-
-### 3.5 Suno Prompt v0.1（待 Kieran 拍 Suno 工艺）
-
-- 工艺约束 = 外部建议 20-30% 泛化乐器 + 场景 + 情绪词
-- Prompt 草稿由 bot-b 写，但 LOCKED 必须 Kieran 拍
+⚠️ **Sound DNA 5 + Forbidden 4 + Reference 4 + Visual 4 + Suno Prompt 6 项 LOCKED（2026-07-14）。剩 1 项**：
 
 ### 3.6 Lyrics SOP
 
