@@ -153,6 +153,33 @@ tags: [Veloria Senda, Latin Folk, World Music, v0.1, wip]
 - 视觉 = **纪录感视觉**（市场、山景、手工织物）+ **轻字幕** + 文化切片。
 - YouTube / Shorts 用纪录片镜头叙事。
 
+### 3.6 Lyrics / Text Vault 路线图（结构性输入 LOCKED）
+
+> 来源：用户 2026-07-14 提出"建立独立 Lyrics / Text Vault"。
+> 本节 = 借鉴参考 / 路线图标注，**不立即建文件**。
+
+**叙事主轴（已固化）**：
+
+- 拉美与世界民间故事的编年诗 — 拉美文化 / 旅记 / 民俗资料的文本资产化。
+
+**商业目标（已固化）**：
+
+- 文化 / 旅游局 / 纪录片 / 公益项目的声音品牌 — "能为文化项目持续写歌和声音故事"的长期能力。
+
+**结构化方向**：
+
+- 升级 `weini-cos/01-lyrics-lab/`，但**改名**为 `lyrics-vault/`，与 Oaeli 名字相近（避免混淆）。
+- **不同于 Oaeli 的"都市日记"，Veloria 走"民俗 + 文化调研"的资料型 Vault**。
+- 输入 source = 旅行笔记 / 民俗资料 / 新闻事件 / 与拉美民俗机构合作接口（不归档原始版权资料）。
+
+**Kieran 待拍板项（不擅自写 v0.2）**：
+
+1. ⚠️ 数据 schema 字段定档（民俗项目 / 素材源 / 起步资本 / co-funding）
+2. ⚠️ 与拉美民俗机构合作接口的 IP 协议设计（CC-BY / 授权书 / 版权标注）
+3. ⚠️ 是否充分借鉴：Lilián Kvien（阿根廷 / 与文化部合作）/ Natalia Lafourcade 的文稿资料型路径
+4. ⚠️ 主题偖库（Andean 高地 / Mercado 早市 / 海岸小镇 / Camino 等双分类索引）
+5. ⚠️ Sound DNA v1.0 LOCKED 后再启 Lyrics Vault（L3 难进 L4 为原则，Vault 是 L3 以上的资产）
+
 ---
 
 ## 4. 路线图（v0.1 WIP → LOCKED 待 Kieran 拍板）

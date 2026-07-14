@@ -145,6 +145,32 @@ vault_truth_only: true
 - 跨艺人协同：与 Aube Valois（巴黎清晨）、Luna（夜晚 Tokyo）、Weini（夜晚台北）形成跨厂牌横切。
 - Kieran 待拍板：4 × N 中具体选哪条 Track 1。
 
+### 3.6 Lyrics / Text Vault 路线图（结构性输入 LOCKED）
+
+> 来源：用户 2026-07-14 提出"建立独立 Lyrics / Text Vault"。
+> 本节 = 借鉴参考 / 路线图标注，**不立即建文件**。
+
+**叙事主轴（已固化）**：
+
+- 现代化西语城市生活的编年诗 — 真人都市记忆 + AI 声响。
+
+**商业目标（已固化）**：
+
+- 西语世界品牌（饮料 / 生活方式 / 城市文化节）的合作歌与 Campaign 曲目。
+
+**结构化方向**：
+
+- 升级自 `weini-cos/01-lyrics-lab/` 模式，但**改名**为 `lyrics-vault/`，因为定位从"每日 1 句"变为"长期文稿库"。
+- 数据 schema = 我们 9 月 12 拉美数据库 vs 每月拉美日记 vs 拼合 cummulative corpus。
+
+**Kieran 待拍板项（不擅自写 v0.2）**：
+
+1. ⚠️ 数据 schema 字段定档（频率？单句 / 段落 / 多文稿？）
+2. ⚠️ 是否纳入真实 / 改编日记内容（IP 风险评估）
+3. ⚠️ 编辑流程（diary → 改编 → lyric 的去隐私/去重润色路径）
+4. ⚠️ 与 Suno Prompt 的交付接口（是否提前 3个月预留 lyries buffer）
+5. ⚠️ 品牌合作路径中"品牌限定"的文案括弧在 Vault 中怎么标（避免 Track 无法独立发行）
+
 ---
 
 ## 4. 路线图（v0.1 WIP → LOCKED 待 Kieran 拍板）
