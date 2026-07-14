@@ -1,6 +1,6 @@
 ---
-title: Oaeli 风格内容规划 v0.1
-version: v0.1
+title: Oaeli 风格内容规划 v0.2
+version: v0.2
 status: wip
 updated: 2026-07-14
 artist_code: A6
@@ -69,7 +69,33 @@ vault_truth_only: true
 
 ---
 
-## 3. 内容规划方向（v0.1 WIP）
+## 3. 外部研究输入（2026-07-14 借鉴参考）
+
+> 来源：用户引入的对 Latin 西语市场 + Suno 5.5 适应度的外部研究报告。
+> 处理：拆为「**结构性 / 可直接吸收**」与「**待 Kieran 拍板**」两类。
+
+### 3.0 协作分位（直接吸收为 Strategic Direction）
+
+- **Oaeli（A6）= Suno 主力"西语都市情绪"走量项目**。维持拉丁主盘审美，与 🥉 P2 RouteNote 优先级解耦。
+- **Veloria Senda（A8）= 拉美人文 / World 编辑名片**。保留 🥈 P1，但编辑权重大于走量。
+- 两者形成 **「Oaeli 量产 + Veloria 精制」** 双艺人组合。
+- 长期愿景：**双艺人同一主题跨域对切**（同一"黎明"，Oaeli 都市早晨 vs Veloria Senda 高地黎明，共享封面系列）。
+
+### 3.0.1 市场体量定位（结构性事实）
+
+- 美区 Latin 音乐 2025 H1 批发收入 ~4.9 亿美元（+5.9% YoY，12 年连续增长，98% 流媒体，付费订阅 +10%）。
+- 2024 拉美语音乐在美录音市场占比 8.1%，2025 保持 8%+。
+- Latin Pop 近一年略有下滑（-1.29%），Latin Tropical 增速放缓 → Latin 主盘竞争激烈，需要差异化。
+- 结论：Oaeli 站在「**高体量 + 高竞争**」池；Veloria Senda 在「**细分 + editorial 友好**」池。
+
+### 3.0.2 Suno 5.5 适应度（结构性事实）
+
+- Suno 对西语 Pop / Reggaeton / Latin Pop / Bachata / Corridos / Flamenco 已有成熟模板，Prompt 生态成熟。
+- 对 Folk / World / 传统乐器（Charango / Quena / Cajón）支持偏"模拟感"，**容易听出 AI 边界**。
+- **工艺结论**：器乐收敛 = 20-30% 泛化描述（acoustic guitar, light Latin percussion, flutes）；不要在 Prompt 强行点名细分乐器；改用 **场景 + 情绪 + 风格泛化词**（warm Latin folk ballad, organic acoustic, intimate female vocal）驱动。
+- 节奏：Oaeli 80-95 BPM = Suno 默认最擅长；Veloria Senda 90-120 BPM 更偏氛围歌而非强 hook hit。
+
+
 
 ### 3.1 Lyrics Lab 主题候选（待 Kieran 拍板）
 
@@ -106,10 +132,18 @@ vault_truth_only: true
 
 ### 3.5 Track 1 候选主题（LOCKED 前均待 Kieran 拍板）
 
-- ⚠️ 室内（清晨 Madrid 公寓）：与 Aube Valois（巴黎清晨）形成 Parallel
-- ⚠️ 室外（白天海边）：西班牙向海性
-- ⚠️ 节庆（Semana Santa / La Tomatina）：文化锚定
-- ⚠️ 都市独居（一居室 23:00）：与 Luna （夜晚 Tokyo）/ Weini（夜晚台北）形成跨厂牌横切
+⚠️ 候选场景矩阵（外部建议升级 = **4 × N 结构**）：
+
+| 场景原型 | 情绪变体 |
+|---|---|
+| 清晨 Madrid 公寓 | (a) 孤独醒来 / (b) 城市白噪音独处 |
+| 夜晚 Mexico City 独行 | (a) 末班车 / (b) 街区灯下漫步 |
+| 地中海海边白日 | (a) 沙滩午后 / (b) 海风晚餐 |
+| 地铁站 / 城市眺望台 | (a) 高峰通勤 / (b) 凝视地平线 |
+
+- **首批 6-8 条 Track 全压给 Oaeli**，作为 Suno 在西语 Pop 方向的整体模型行为验证。
+- 跨艺人协同：与 Aube Valois（巴黎清晨）、Luna（夜晚 Tokyo）、Weini（夜晚台北）形成跨厂牌横切。
+- Kieran 待拍板：4 × N 中具体选哪条 Track 1。
 
 ---
 

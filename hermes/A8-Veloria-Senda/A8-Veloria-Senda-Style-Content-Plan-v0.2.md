@@ -1,6 +1,6 @@
 ---
-title: Veloria Senda 风格内容规划 v0.1
-version: v0.1
+title: Veloria Senda 风格内容规划 v0.2
+version: v0.2
 status: wip
 updated: 2026-07-14
 artist_code: A8
@@ -68,7 +68,31 @@ tags: [Veloria Senda, Latin Folk, World Music, v0.1, wip]
 
 ---
 
-## 3. 内容规划方向（v0.1 WIP）
+## 3. 外部研究输入（2026-07-14 借鉴参考）
+
+> 来源：用户引入的对 Latin 西语市场 + Suno 5.5 适应度的外部研究报告。
+> 处理：拆为「**结构性 / 可直接吸收**」与「**待 Kieran 拍板**」两类。
+
+### 3.0 协作分位（直接吸收为 Strategic Direction）
+
+- **Oaeli（A6）= Suno 主力"西语都市情绪"走量项目**。维持拉丁主盘审美，与 🥉 P2 RouteNote 优先级解耦。
+- **Veloria Senda（A8）= 拉美人文 / World 编辑名片**。保留 🥈 P1，但编辑权重大于走量。
+- 两者形成 **「Oaeli 量产 + Veloria 精制」** 双艺人组合。
+- 长期愿景：**双艺人同一主题跨域对切**（同一"黎明"，Oaeli 都市早晨 vs Veloria Senda 高地黎明，共享封面系列）。
+
+### 3.0.1 市场体量定位（结构性事实）
+
+- 美区 Latin 音乐 2025 H1 批发收入 ~4.9 亿美元（+5.9% YoY，12 年连续增长，98% 流媒体，付费订阅 +10%）。
+- 2024 拉美语音乐在美录音市场占比 8.1%，2025 保持 8%+。
+- Latin Pop 近一年略有下滑（-1.29%），Latin Tropical 增速放缓 → Latin 主盘竞争激烈，需要差异化。
+- 结论：Oaeli 站在「**高体量 + 高竞争**」池；Veloria Senda 在「**细分 + editorial 友好**」池。
+
+### 3.0.2 Suno 5.5 适应度（结构性事实）
+
+- Suno 对西语 Pop / Reggaeton / Latin Pop / Bachata / Corridos / Flamenco 已有成熟模板，Prompt 生态成熟。
+- 对 Folk / World / 传统乐器（Charango / Quena / Cajón）支持偏"模拟感"，**容易听出 AI 边界**。
+- **工艺结论**：器乐收敛 = 20-30% 泛化描述（acoustic guitar, light Latin percussion, flutes）；不要在 Prompt 强行点名细分乐器；改用 **场景 + 情绪 + 风格泛化词**（warm Latin folk ballad, organic acoustic, intimate female vocal）驱动。
+- 节奏：Oaeli 80-95 BPM = Suno 默认最擅长；Veloria Senda 90-120 BPM 更偏氛围歌而非强 hook hit。
 
 ### 3.1 Lyrics Lab 主题候选（待 Kieran 拍板）
 
@@ -105,10 +129,29 @@ tags: [Veloria Senda, Latin Folk, World Music, v0.1, wip]
 
 ### 3.5 Track 1 候选主题（LOCKED 前均待 Kieran 拍板）
 
-- ⚠️ Andean（高海拔清晨）：与 Oaeli 室内 / Luna 夜晚 Tokyo / Aube 室内 Paris 形成跨厂牌横切
-- ⚠️ Coastal（海边小镇傍晚）：与 Veloria 黄昏同时间轴但场景不同
-- ⚠️ Mercado（早市）：拉美人文锚定
-- ⚠️ Camino / 路上（行走）：与微霓 Track 2「窓辺」(室内→户外) 形成对比
+⚠️ 候选场景矩阵（外部建议 = **"样板房"模式**：先 2-3 条，锁定品牌织物感）：
+
+**首推两条主题（外部建议优先级）**：
+
+1. **Andean 高地清晨**：与 Oaeli 都市黎明形成跨厂牌横切；模板可参考 Lina（市场晨光）+ 微霓 Track 2 「窓辺」（室内→户外）
+2. **Mercado 早市**：拉美人文锚定；模板可与 Aube "Premier Matin"（巴黎清晨公寓）形成"Sun rise across culture"系列
+
+**备选两条**：
+
+- ⚠️ Coastal 海岸小镇傍晚：与 A5 Veloria 黄昏同时间但场景不同（拉美海岸 vs 拉美都市黄昏）
+- ⚠️ Camino / 路上：与微霓 Track 2 「窓辺」(室内→户外) 形成 "户外节奏" 系列
+
+**双版本策略（外部建议）**：
+
+每条 Suno Track 都做 **主版本 + 备选版本**：
+- 主版本：以 Latin Folk 为主，较多原声元素。
+- 备选版本：略靠近 Latin Pop Ballad（鼓弱化、旋律更 pop），看实际流媒体表现再决定是否在后续规划中增加"Folk-Pop crossover"线。
+
+**操作角色定位（外部建议 = 直接吸收）**：
+
+- Veloria Senda KPI = **Playlist 命中率（World / Acoustic / Latin Folk lists）+ 长期完播率**，不是短期播放量峰值。
+- 视觉 = **纪录感视觉**（市场、山景、手工织物）+ **轻字幕** + 文化切片。
+- YouTube / Shorts 用纪录片镜头叙事。
 
 ---
 
