@@ -1,0 +1,62 @@
+version: 2.0
+status: LOCKED
+name: US Market Radar 周报
+timezone: Asia/Shanghai
+schedule:
+  cron: "0 21 * * 6"
+  description: 每周六 21:00（北京时间）
+roadmap:
+  v2.0: 主报告 8 模块（Market Regime / Sector Rotation / Sub Industry / AI Overlay / Sector Score / Stock Monitor / Form 4 / Appendix [approximate]）
+  v2.1: 在 AI Overlay 下扩展更多 AI/Power/Network 代表股，不增加 100 总数
+  v3.0: 估值层与 EPS Revision（依赖 Finviz/FMP/Koyfin 等可拿数据源，待拍板）
+  v4.0: 接 TradingView / Koyfin API（付费方案）
+  current: v2.0
+modules:
+  market_regime:
+    description: 判断 Risk On / Risk Off / Transition
+    instruments: [SPY, QQQ, IWM, ^VIX, DX-Y.NYB, ^TNX, ^FVX, GC=F]
+    output: 市场状态 + 解读 + 有利/不利板块
+  sector_rotation: 11 主板块（v1.0 继承）
+  sub_industry: 24 子板块（v1.0 继承）
+  ai_overlay: [SMH, BOTZ, ROBO, CLOU, GRID]
+  sector_score:
+    weights:
+      momentum_1m: 15
+      momentum_3m: 20
+      relative_spy: 25
+      trend: 25
+      volume: 10
+      news: 5
+    range: 0-100
+    news_role: 仅作解释，不进评分权重（你 7-14 LOCKED：新闻是噪音/滞后）
+  stock_monitor:
+    count: 100
+    rules: 不增加总数；如需 AI 主题股映射，使用 Theme 标签
+    labels: [Sector, Theme]
+  insider: SEC EDGAR Form 4（v1.0 继承）
+  appendix_approximate:
+    rule: 严禁进入主评分；只列可拿数据源拿到的近似值
+    available:
+      individual_stock_fwd_pe: 仅个股 forward PE（NVDA 等）
+      individual_stock_pb: 仅个股 Price/Book
+    forbidden:
+      etf_fund_flow: "etf.com 403 etfdb 403 WSJ 401 yfinance quoteSummary 401 nasdaq 200 太精简"
+      etf_fwd_pe_5y_percentile: ETF 无免费源
+      eps_revision_free: FactSet/Refinitiv 付费；FMP 限速不稳
+data_sources:
+  prices: yfinance
+  fundamentals: yfinance.Ticker.info（仅个股）
+  news: Yahoo Finance RSS + SEC EDGAR RSS
+  paid_api: false
+outputs:
+  report_dir: /root/obsidian-sync/hermes/US-Market-Sector-Weekly/reports
+  latest_report: /root/obsidian-sync/hermes/US-Market-Sector-Weekly/LATEST.md
+  telegram_summary: 5 行
+  obsidian_push: true
+controls:
+  demo_run: false
+  yaml_locked: true
+  skill_locked: true
+  cron_locked: true
+  memory_locked: true
+  scope_locked: 100 股不增、35 ETF 不增（v2.0 不扩数量；v2.1 才动 AI Overlay 股）
