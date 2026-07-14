@@ -1,6 +1,6 @@
 ---
-title: A6 Oaeli Track 01 Playbook v0.2
-version: v0.2
+title: A6 Oaeli Track 01 Playbook v0.3
+version: v0.3
 status: wip
 created: 2026-07-14
 updated: 2026-07-14
@@ -11,7 +11,9 @@ release_target: 2026-09-11（与 Luna T01 / Weini T02 同步集中推）
 catalog_id: HR-A6-T01
 sound_dna_locked: 2026-07-14
 sound_dna_set: "BPM 80-95; Key Dorian/自然小调; Structure Latin Pop Standard; Vocal 70-80% Female es-MX; Female es-MX"
-kieran_signoff_required: "Forbidden + Reference + Visual + Suno Prompt + Lyrics SOP"
+forbidden_locked: 2026-07-14
+forbidden_set: "Reaggaeton 禁用浓 puree 仅可微弱 urban ≤10%; Trap 禁; Flamenco/探戈 禁用浓 ≥30% 仅可色彩点缀; Old-school 西语 Timbre 禁"
+kieran_signoff_required: "Reference + Visual + Suno Prompt + Lyrics SOP"
 tags: [Oaeli, Track 01, Playbook, 9-11, wip] 
 ---
 
@@ -42,6 +44,17 @@ tags: [Oaeli, Track 01, Playbook, 9-11, wip]
 
 **Sound DNA v1.0 LOCKED = 2026-07-14**。
 
+## 2b. Forbidden（2026-07-14 LOCKED）✓
+
+| Forbidden 项 | LOCKED 边界 |
+|---|---|
+| Reaggaeton 节拍 | 禁用浓 puree；仅可微弱 urban 影子 ≤10% |
+| Trap Influence | 禁 |
+| Flamenco / 探戈 | 禁用浓 ≥30%；仅可色彩点缀 |
+| Old-school 西语 Vocal Timbre | 禁 |
+
+**Forbidden v1.0 LOCKED = 2026-07-14**。
+
 ## 2. 时间轴建议（D-56 ~ D+90）
 
 | 阶段 | 日期 | 工作 |
@@ -56,16 +69,9 @@ tags: [Oaeli, Track 01, Playbook, 9-11, wip]
 | **D+28** | 2026-10-09 | D+28 数据快照（Track 1 SOP § 性能回顾）|
 | **D+88** | 2026-12-08 | 性能回顾 v1（参考 micro artist artist-development D88 SOP）|
 
-## 3. 拍板区（Kieran 决策清单 · Sound DNA 已清）
+## 3. 拍板区（Kieran 决策清单 · Sound DNA + Forbidden 已清）
 
-⚠️ **Sound DNA 5 项已 LOCKED（2026-07-14）。下一阶段拍板字段**：
-
-### 3.2 Forbidden（黑名单）
-
-- ⚠️ Reaggaeton 节拍 — 待 Kieran 拍（外部建议 = 微弱 urban 影子、不过度）
-- ⚠️ Trap Influence
-- ⚠️ Flamenco / 探戈过浓
-- ⚠️ Old-school 西语 Vocal Timbre
+⚠️ **Sound DNA 5 项 + Forbidden 4 项均已 LOCKED（2026-07-14）。下一阶段拍板字段**：
 
 ### 3.3 Reference Music（参考艺人）
 
