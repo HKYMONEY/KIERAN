@@ -1,0 +1,38 @@
+version: 1.0
+status: LOCKED
+name: 美股板块周报
+timezone: Asia/Shanghai
+schedule:
+  cron: "0 21 * * 6"
+  description: 每周六 21:00（北京时间）
+market_scope:
+  country: US
+  assets: [ETF, stock]
+  exclusions: [crypto, commodities, non_US_equities]
+data_sources:
+  prices: yfinance
+  news:
+    - Yahoo Finance RSS
+    - SEC EDGAR submissions RSS
+  paid_api: false
+method:
+  price_period: 3mo
+  weekly_return: true
+  relative_strength_benchmark: SPY
+  trend_windows_days: [20, 50]
+  sector_ranking_count: 11
+  industry_ranking_count: 24
+  representative_stock_count: 100
+outputs:
+  report_dir: /root/obsidian-sync/hermes/US-Market-Sector-Weekly/reports
+  latest_report: /root/obsidian-sync/hermes/US-Market-Sector-Weekly/LATEST.md
+  machine_state: /var/codex_project/hermes-home/profiles/bot-b/scripts/us-market-sector-weekly/state.json
+  telegram_summary: true
+  obsidian_push: true
+controls:
+  demo_run: false
+  report_cadence: weekly_only
+  yaml_locked: true
+  skill_locked: true
+  cron_locked: true
+  memory_locked: true
