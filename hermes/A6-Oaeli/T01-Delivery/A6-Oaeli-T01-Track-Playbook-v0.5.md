@@ -1,6 +1,6 @@
 ---
-title: A6 Oaeli Track 01 Playbook v0.4
-version: v0.4
+title: A6 Oaeli Track 01 Playbook v0.5
+version: v0.5
 status: wip
 created: 2026-07-14
 updated: 2026-07-14
@@ -15,7 +15,9 @@ forbidden_locked: 2026-07-14
 forbidden_set: "Reaggaeton 禁用浓 puree 仅可微弱 urban ≤10%; Trap 禁; Flamenco/探戈 禁用浓 ≥30% 仅可色彩点缀; Old-school 西语 Timbre 禁"
 reference_locked: 2026-07-14
 reference_set: "Rigoberta Bandini; Natalia Lacunza; Cariño; Veintiuno (Rosalía 排除因 mega artist KPI 错位)"
-kieran_signoff_required: "Visual + Suno Prompt + Lyrics SOP"
+visual_locked: 2026-07-14
+visual_set: "摄影; Mediterranean暖色 (terracotta+dusty rose+sun-bleached gold); 女性背影 站立窗前/城市远景; tag line='Canta lo que no se dice al despertar'"
+kieran_signoff_required: "Suno Prompt + Lyrics SOP"
 tags: [Oaeli, Track 01, Playbook, 9-11, wip] 
 ---
 
@@ -69,6 +71,17 @@ tags: [Oaeli, Track 01, Playbook, 9-11, wip]
 
 **Reference v1.0 LOCKED = 2026-07-14**。
 
+## 2d. Visual DNA（2026-07-14 LOCKED）✓
+
+| 字段 | LOCKED 值 |
+|---|---|
+| 摄影 vs illustration | 摄影（纪实非抽象）|
+| 主色调 | Mediterranean 暖色（terracotta + dusty rose + sun-bleached gold）|
+| 主体 | 女性背影（站立窗前 / 城市远景）|
+| tag line | "Canta lo que no se dice al despertar" |
+
+**Visual DNA v1.0 LOCKED = 2026-07-14**。
+
 ## 2. 时间轴建议（D-56 ~ D+90）
 
 | 阶段 | 日期 | 工作 |
@@ -83,15 +96,9 @@ tags: [Oaeli, Track 01, Playbook, 9-11, wip]
 | **D+28** | 2026-10-09 | D+28 数据快照（Track 1 SOP § 性能回顾）|
 | **D+88** | 2026-12-08 | 性能回顾 v1（参考 micro artist artist-development D88 SOP）|
 
-## 3. 拍板区（Kieran 决策清单 · Sound DNA + Forbidden + Reference 已清）
+## 3. 拍板区（Kieran 决策清单 · Sound DNA + Forbidden + Reference + Visual 已清）
 
-⚠️ **Sound DNA 5 项 + Forbidden 4 项 + Reference 4 项 LOCKED（2026-07-14）。下一阶段拍板字段**：
-
-### 3.4 Visual DNA
-
-- ⚠️ 摄影 vs illustration（建议 Mediterranean 暖色 / dusty rose / sun-bleached gold）
-- ⚠️ 主体（女性背影 / 城市建筑远景 / 室内家具静物）
-- ⚠️ tag line（建议 "Canta lo que no se dice al despertar"）
+⚠️ **Sound DNA 5 项 + Forbidden 4 项 + Reference 4 项 + Visual 4 项 LOCKED（2026-07-14）。下一阶段拍板字段**：
 
 ### 3.5 Suno Prompt v0.1（待 Kieran 拍 Suno 工艺）
 
