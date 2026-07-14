@@ -1,6 +1,6 @@
 ---
-title: A6 Oaeli Track 01 Playbook v0.3
-version: v0.3
+title: A6 Oaeli Track 01 Playbook v0.4
+version: v0.4
 status: wip
 created: 2026-07-14
 updated: 2026-07-14
@@ -13,7 +13,9 @@ sound_dna_locked: 2026-07-14
 sound_dna_set: "BPM 80-95; Key Dorian/自然小调; Structure Latin Pop Standard; Vocal 70-80% Female es-MX; Female es-MX"
 forbidden_locked: 2026-07-14
 forbidden_set: "Reaggaeton 禁用浓 puree 仅可微弱 urban ≤10%; Trap 禁; Flamenco/探戈 禁用浓 ≥30% 仅可色彩点缀; Old-school 西语 Timbre 禁"
-kieran_signoff_required: "Reference + Visual + Suno Prompt + Lyrics SOP"
+reference_locked: 2026-07-14
+reference_set: "Rigoberta Bandini; Natalia Lacunza; Cariño; Veintiuno (Rosalía 排除因 mega artist KPI 错位)"
+kieran_signoff_required: "Visual + Suno Prompt + Lyrics SOP"
 tags: [Oaeli, Track 01, Playbook, 9-11, wip] 
 ---
 
@@ -55,6 +57,18 @@ tags: [Oaeli, Track 01, Playbook, 9-11, wip]
 
 **Forbidden v1.0 LOCKED = 2026-07-14**。
 
+## 2c. Reference Music（2026-07-14 LOCKED）✓
+
+| Reference 艺人 | LOCKED 决定 | 备注 |
+|---|---|---|
+| Rigoberta Bandini | ✓ 入选 | 现代西语都市抒情代表 |
+| Natalia Lacunza | ✓ 入选 | Bedroom / Indie 西语 |
+| Cariño | ✓ 入选 | 现代派 + 实验边界 |
+| Veintiuno | ✓ 入选 | Indie Pop 西班牙代表 |
+| Rosalía 早期 | ✗ 不入选 | mega artist，避免 KPI 错位 |
+
+**Reference v1.0 LOCKED = 2026-07-14**。
+
 ## 2. 时间轴建议（D-56 ~ D+90）
 
 | 阶段 | 日期 | 工作 |
@@ -69,14 +83,9 @@ tags: [Oaeli, Track 01, Playbook, 9-11, wip]
 | **D+28** | 2026-10-09 | D+28 数据快照（Track 1 SOP § 性能回顾）|
 | **D+88** | 2026-12-08 | 性能回顾 v1（参考 micro artist artist-development D88 SOP）|
 
-## 3. 拍板区（Kieran 决策清单 · Sound DNA + Forbidden 已清）
+## 3. 拍板区（Kieran 决策清单 · Sound DNA + Forbidden + Reference 已清）
 
-⚠️ **Sound DNA 5 项 + Forbidden 4 项均已 LOCKED（2026-07-14）。下一阶段拍板字段**：
-
-### 3.3 Reference Music（参考艺人）
-
-- ⚠️ Rigoberta Bandini / Natalia Lacunza / Cariño / Veintiuno / Rosalía 早期 — 候选
-- ⚠️ Kieran 拍 3-5 位锁定
+⚠️ **Sound DNA 5 项 + Forbidden 4 项 + Reference 4 项 LOCKED（2026-07-14）。下一阶段拍板字段**：
 
 ### 3.4 Visual DNA
 
