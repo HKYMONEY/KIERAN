@@ -1,21 +1,21 @@
-<parameter name="content">---
-title: A6 Oaeli Track 01 Playbook v0.1（route map，wip）
-version: v0.1
+---
+title: A6 Oaeli Track 01 Playbook v0.2
+version: v0.2
 status: wip
 created: 2026-07-14
+updated: 2026-07-14
 extends:
   - A6-Oaeli-Style-Content-Plan-v0.2.md § 4.0
   - 30-Resources/FLAC-Tags/HAEVO-8-ARTISTS-FLAC-TAGS-v1.0.md § 4.2（A6 数据卡）
 release_target: 2026-09-11（与 Luna T01 / Weini T02 同步集中推）
 catalog_id: HR-A6-T01
-kieran_signoff_required: "Sound DNA + Suno Prompt + Lyrics + Reference + Visual"
-tags: [Oaeli, Track 01, Playbook, 9-11, wip]
+sound_dna_locked: 2026-07-14
+sound_dna_set: "BPM 80-95; Key Dorian/自然小调; Structure Latin Pop Standard; Vocal 70-80% Female es-MX; Female es-MX"
+kieran_signoff_required: "Forbidden + Reference + Visual + Suno Prompt + Lyrics SOP"
+tags: [Oaeli, Track 01, Playbook, 9-11, wip] 
 ---
 
-# A6 Oaeli · Track 01 Playbook v0.1（route map only）
-
-> ⚠️ **本文件仅为路线图占位。** Sound DNA / Suno Prompt / Lyrics SOP / Reference / Visual / Master Pipeline 全部待 Kieran 拍板。
-> 距离目标发日 9-11 = ~59 天（7-14 起算）。参考 Weini Track 02 Playbook v0.1 的 D-56 ~ D+90 SOP 编排。
+# A6 Oaeli · Track 01 Playbook v0.2（Sound DNA 已 LOCKED）
 
 ---
 
@@ -29,6 +29,18 @@ tags: [Oaeli, Track 01, Playbook, 9-11, wip]
 - **AI_DISCLOSURE**: `AI-generated music under Haevo Project`
 - **优先发平台**：Spotify / Apple Music / YouTube Music（RouteNote 提交，与 Luna T01 同窗口）
 - **Track # in label**: Oaeli Track 1
+
+## 2. Sound DNA（2026-07-14 LOCKED）✓
+
+| 字段 | LOCKED 值 |
+|---|---|
+| BPM 区间 | 80-95 BPM |
+| Key 范围 | Dorian / 自然小调 |
+| 结构 | Latin Pop Standard（A + Coro + Verso + Puente）|
+| 人声比 | 70-80% Female |
+| Suno Vocal 语种 | es-MX Female |
+
+**Sound DNA v1.0 LOCKED = 2026-07-14**。
 
 ## 2. 时间轴建议（D-56 ~ D+90）
 
@@ -44,17 +56,9 @@ tags: [Oaeli, Track 01, Playbook, 9-11, wip]
 | **D+28** | 2026-10-09 | D+28 数据快照（Track 1 SOP § 性能回顾）|
 | **D+88** | 2026-12-08 | 性能回顾 v1（参考 micro artist artist-development D88 SOP）|
 
-## 3. 拍板区（Kieran 决策清单）
+## 3. 拍板区（Kieran 决策清单 · Sound DNA 已清）
 
-⚠️ **本节为 Kieran 必须决策的字段，bot-b 不擅自填写**：
-
-### 3.1 Sound DNA（区间 LOCKED）
-
-- BPM 区间：⚠️ 待 Kieran 拍板（外部建议 80-95 BPM，仅输入）
-- Key 范围：⚠️ 待 Kieran 拍板
-- 结构：⚠️ 候选 Latin Pop Standard vs 4-段 Ambient
-- 人声比：⚠️ 待 Kieran 拍板
-- Suno Vocal 语种：⚠️ es-MX / es-ES
+⚠️ **Sound DNA 5 项已 LOCKED（2026-07-14）。下一阶段拍板字段**：
 
 ### 3.2 Forbidden（黑名单）
 
