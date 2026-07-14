@@ -48,8 +48,8 @@ tags: [Veloria Senda, Track 01, Mercado, RouteNote, Submission Notes, v1.0, LOCK
 | **Label** | `Haevo Records` | LABEL LOCKED |
 | **Catalog Number** | `HR-A8-T01` | CATALOGNUMBER LOCKED |
 | **Track Title Version** | `Original Mix` | 单 Track |
-| **Genre (Primary)** | ⚠️ **Kieran 拍板** | 冲突，见 §3 |
-| **Subgenre (Secondary)** | ⚠️ **Kieran 拍板** | 同 §3 |
+| **Genre (Primary)** | `Latin` | LOCKED 7-14 全栈 |
+| **Subgenre (Secondary)** | `World` | LOCKED 7-14 全栈 |
 | **Release Date** | **`2026-09-11`** | 4-artist 同日 LOCKED |
 | **Pre-save** | ✅ Enable | 与 Oaeli / Luna 7-13 一致 |
 | **Language** | `Spanish` | RouteNote dropdown |
@@ -76,28 +76,23 @@ tags: [Veloria Senda, Track 01, Mercado, RouteNote, Submission Notes, v1.0, LOCK
 
 ## §3. ⚠️ Genre Primary/Secondary 冲突 LOCKED 待 Kieran 拍板
 
-### 3.1 现状冲突
+### §3.1 现状冲突（已 LOCKED 7-14 解决）
 | 来源 | Primary | Secondary | 状态 |
 |---|---|---|---|
-| **ID3 SECONDARYGENRE**（metaflac 实装）| Latin | **Alternative** | ✓ 实测 |
+| **ID3 SECONDARYGENRE**（metaflac 实装，7-14 重写）| Latin | **World** | ✅ 实测（`949ad2ed...`）|
 | **Brand Bible §5.1**（vault truth）| Latin | **World** | ✓ LOCKED 7-14 |
 | **v4.2 matrix**（8-artist LOCKED 7-13）| Latin | World | ✓ LOCKED |
 | **HAEVO-8-ARTISTS §4.2 A8** | Latin | World | ✓ LOCKED |
 
-### 3.2 哪个走 RouteNote？
+### §3.2 拍板 = A LOCKED（2026-07-14）
+**A — 全栈 World** LOCKED：ID3 + Brand Bible + v4.2 + HAEVO-8-ARTISTS 4 方一致。
+Kieran 拍 A → bot-b 已修正 metaflac SECONDARYGENRE=Alternative → World。
+Tag-on-disk MD5: `949ad2edb1f87c79b5cb0dd96391c5ac`。
 
-LOCKED 候选 = **A. Primary=Latin / Secondary=World**（Brand Bible + v4.2 + HAEVO-8-ARTISTS 三方一致）
-
-如接受 A → 同步修 ID3 `SECONDARYGENRE=Alternative` → `World` 后再提交。
-
-如拒绝 A = B. 维持 ID3 `Alternative` + Brand Bible 修 v1.1 = 双源同步
-
-### 3.3 拍板选项
-1. **A — 全栈 World**（修正 ID3 + 与 Brand Bible 对齐）
-2. **B — ID3 Alternative 优先**（修 Brand Bible / 写 Override 注释）
-3. Kieran 自定义路线
-
-### LOCKED 7-14 推荐：A（全栈对齐，路径最短，提交前修订 ID3 即可）
+### §3.3 拍板状态 = 已锁定 7-14
+- [x] **A** — 全栈 World LOCKED
+- [ ] B — ID3 Alternative 优先（已拒绝）
+- [ ] Kieran 自定义（未启用）
 
 ---
 

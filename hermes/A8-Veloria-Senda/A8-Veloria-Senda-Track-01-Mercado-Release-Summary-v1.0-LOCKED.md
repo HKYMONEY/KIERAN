@@ -30,7 +30,7 @@ tags: [Veloria Senda, Track 01, Mercado, Release Summary, v1.0, LOCKED]
 
 | 文件 | 路径 | 大小 | SHA256 前 16 |
 |---|---|---|---|
-| **Release FLAC** | `hermes/A8-Veloria-Senda/T01-Delivery/Mercado-Release.flac` | 38,649,990 B (36.85 MB) | `e7b1105fa67b5025...` |
+| **Release FLAC** | `hermes/A8-Veloria-Senda/T01-Delivery/Mercado-Release.flac` (38.65 MB) | `26c31ddfff1b5e174ef3935e2a8397a44c83341974e4f75a84dcab95aa417112` |
 | **Cover PNG** | `hermes/A8-Veloria-Senda/T01-Delivery/Mercado-Cover-v1.0-3000.png` | 3,097,912 B (2.95 MB) | <计算> |
 
 Archive 24-bit FLAC 单独存放在 bot-b VPS（不进入 git vault，LOCKED 7-13）。
@@ -62,7 +62,7 @@ ALBUM=Mercado (Single)
 ALBUMARTIST=Veloria Senda
 TRACKNUMBER=1 / TRACKTOTAL=1
 GENRE=Latin
-SECONDARYGENRE=Alternative
+SECONDARYGENRE=World
 LANGUAGE=es / LANGUAGE_SECONDARY=en
 YEAR=2026
 COMPOSER=XIAOYANG ZHANG
@@ -135,17 +135,15 @@ AI-SOURCE=SunOutput
 - **D-7** = 2026-09-04 Cover + ID3 装填 ✅ DONE（Cover v1.0 + 28 tags + PICTURE）
 - **D-Day** = 2026-09-11 RouteNote 提交（Kieran 手动，bot-b 无凭证）
 
-### 7.2 待 Kieran 拍板（未 LOCKED）
-- ⚠️ **RouteNote Primary=Secondary Genre 终选**（Latin/Alternative vs Latin/World 哪个走 primary）
-  - v4.2 matrix LOCKED = Primary=Latin, Secondary=World
-  - Luna T01 / Oaeli A3 ID3 实写 = `SECONDARYGENRE=Alternative`（已装填）
-  - ⚠️ **矛盾已写入**：ID3 是 Alternative，Brand Bible §5.1 = World
-  - 待 Kieran 拍：是否改 ID3 SECONDARYGENRE=World 与 Brand Bible 对齐
+### 7.2 Genre 终拍板已 LOCKED 7-14
+- ✅ **Latin / World 全栈对齐 4 方 LOCKED**（ID3 + Brand Bible + v4.2 + HAEVO-8-ARTISTS）
+- ✅ MD5 已更新 = `949ad2edb1f87c79b5cb0dd96391c5ac`（SECONDARYGENRE 重写）
+- ✅ Tag-on-disk = 28 项 LOCKED
 
 ### 7.3 ⚠️ Honest disclosure
-- ID3 `SECONDARYGENRE=Alternative` vs Brand Bible `World` 不一致（data lock）
-- LRA 4.70 < Brand Bible §6 ≥7 LOCKED（industry baseline 接受，记录在 Brand Bible §11 hypothesis）
-- 24-bit archive 没写 vault（LOCKED 7-13 但与工艺记录矛盾，记录到 Brand Bible Hypothesis）
+- ✅ ID3 `SECONDARYGENRE=World` 全栈对齐 LOCKED 7-14
+- ⚠️ LRA 4.70 < Brand Bible §6 ≥7 LOCKED（industry baseline 接受，记录在 Brand Bible §11 hypothesis）
+- ⚠️ 24-bit archive 没写 vault（LOCKED 7-13 但与工艺记录矛盾，记录到 Brand Bible Hypothesis）
 
 ---
 
