@@ -173,7 +173,37 @@ vault_truth_only: true
 
 ---
 
-## 4. 路线图（v0.1 WIP → LOCKED 待 Kieran 拍板）
+### 4.0 Track 1 拍板区（2026-07-14 路线图 LOCKED）
+
+> Kieran 7-14 拍板：Track 1 路线图已锁定。Sound DNA / Suno Prompt / Lyrics SOP 仍待 Kieran 拍板。
+
+**Track 1 关键决策（已固化）**：
+
+- **发布日**：2026-09-11（A6 Oaeli Track 1 · 与 Luna T01 / Weini T02 同步集中推）
+- **主题**：清晨 Madrid 公寓（a 孤独醒来）— 与 Aube Valois 巴黎清晨公寓形成 "Sun rise across culture" 系列
+- **节奏**：先路线图，再 Sound DNA LOCKED，再 Suno Prompt，再 Lyrics，最后 Sound check + Master
+- **Catalog**: `HR-A6-T01`
+- **AI_DISCLOSURE**: `AI-generated music under Haevo Project`（继承自 8-ARTISTS LOCKED）
+
+**仍待 Kieran 拍板的字段**（不擅自填写 v0.2 风格内容规划文档 / Brand Bible）：
+
+| 决策点 | 待 Kieran 拍板 |
+|---|---|
+| BPM 区间 | ⚠️ 外部建议 80-95 BPM（v0.2 § 3.0.2 输入），最终区间 Kieran 定 |
+| Key | ⚠️ 待 Kieran 拍板 |
+| 结构 | ⚠️ 候选 Latin Pop Standard（v0.2 § 3.0.2 输入）vs 4-段 Ambient |
+| 人声比 | ⚠️ 待 Kieran 拍板 |
+| Suno Vocal 语种 | ⚠️ 待 Kieran 拍板（es-MX / es-ES） |
+| 4×N 矩阵选 1 | ⚠️ 路线图先入"清晨 Madrid 公寓（a 孤独醒来）"，最终从 8 候选选 |
+| Forbidden 名单 | ⚠️ 4 项待 Kieran 拍板（v0.1 § 2.2）|
+| Reference 艺人 | ⚠️ 候选列表（v0.1 § 3.3）Kieran 拍 |
+| Visual DNA | ⚠️ 摄影 vs illustration / 主色 / 主体 / tag line 待 Kieran 拍 |
+| Track 1 SOP 起始日期 | ⚠️ 路线图建议 D-56 ~ D+90 SOP（参考 Weini Track 02 Playbook v0.1）|
+| Lyrics Vault 接入点 | ⚠️ "Lyrics Vault vs Track 1" 衔接规则 |
+
+---
+
+## 5. 路线图（v0.2 wip → LOCKED 待 Kieran 拍板）
 
 | 阶段 | 内容 | 状态 |
 |---|---|---|
