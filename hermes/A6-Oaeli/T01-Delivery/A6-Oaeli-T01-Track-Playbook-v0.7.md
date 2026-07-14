@@ -1,10 +1,11 @@
 ---
-title: A6 Oaeli Track 01 Playbook v0.6
-version: v0.6
+title: A6 Oaeli Track 01 Playbook v0.7
+version: v0.7
 status: wip
 created: 2026-07-14
 updated: 2026-07-14
 extends:
+  - A6-Oaeli-T01-Lyrics-SOP-v0.1.md (新 LOCKED, 7-14)
   - A6-Oaeli-Style-Content-Plan-v0.2.md § 4.0
   - 30-Resources/FLAC-Tags/HAEVO-8-ARTISTS-FLAC-TAGS-v1.0.md § 4.2（A6 数据卡）
 release_target: 2026-09-11（与 Luna T01 / Weini T02 同步集中推）
@@ -19,7 +20,9 @@ visual_locked: 2026-07-14
 visual_set: "摄影; Mediterranean暖色 (terracotta+dusty rose+sun-bleached gold); 女性背影 站立窗前/城市远景; tag line='Canta lo que no se dice al despertar'"
 suno_prompt_locked: 2026-07-14
 suno_prompt_set: "Genre: Spanish Ambient Pop; Mood: intimate dawn solitude; Instrumentation: soft acoustic guitar + light analog pads + ambient room tone (no reggaeton/trap/flamenco); BPM 84; Length 3:24; Vocal female es-MX breathy intimate"
-kieran_signoff_required: "Lyrics SOP"
+lyrics_sop_locked: 2026-07-14
+lyrics_sop_set: "Length 180 chars; Structure Verso+Coro+Puente; ES 100% + EN coro short line 'she wakes alone'; keywords madrugada+ciudad+despertar+soledad sin drama; scene Madrid 公寓 孤独醒来 城市醒 she 未醒; meter 8 syllable per verse"
+kieran_signoff_required: "Lyric 草稿 v1.0 (待 Suno Round 1 Best 后写)"
 tags: [Oaeli, Track 01, Playbook, 9-11, wip] 
 ---
 
@@ -112,15 +115,15 @@ tags: [Oaeli, Track 01, Playbook, 9-11, wip]
 | **D+28** | 2026-10-09 | D+28 数据快照（Track 1 SOP § 性能回顾）|
 | **D+88** | 2026-12-08 | 性能回顾 v1（参考 micro artist artist-development D88 SOP）|
 
-## 3. 拍板区（Kieran 决策清单 · Sound DNA + Forbidden + Reference + Visual + Suno Prompt 已清）
+## 3. 拍板区（Kieran 决策清单 · 所有 Track 1 核心字段 LOCKED）
 
-⚠️ **Sound DNA 5 + Forbidden 4 + Reference 4 + Visual 4 + Suno Prompt 6 项 LOCKED（2026-07-14）。剩 1 项**：
+⚠️ **Sound DNA 5 + Forbidden 4 + Reference 4 + Visual 4 + Suno Prompt 6 + Lyrics SOP 6 = 27 项 LOCKED（2026-07-14）。剩 1 件事**：
 
-### 3.6 Lyrics SOP
+### 3.7 Lyric 草稿 v1.0（2026-08-14 Suno Round 1 Best 后写）
 
-- 长度：⚠️ 候选 168-220 字符 vs Luna 中文 6-8 段
-- 结构：⚠️ Latin Pop Standard + 副歌重复 vs Latin Folk 叙事
-- 关键词：⚠️ 待拍（madrugada / soledad sin drama / alba）
+- 不在 9-11 前完成
+- 等 Best 后根据 Lyrics SOP（v0.1）写完整 Verso + Coro + Puente
+- 写完 → Kieran 拍 LOCKED
 
 ## 4. 严禁项（Track 1 LOCKED 前）
 
