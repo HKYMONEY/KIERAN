@@ -28,3 +28,12 @@ specs/
 
 # OS temp
 Thumbs.db
+# Audio masters (bot-b generated, too big for git, kept local only)
+*.flac
+*.wav
+*.mp3
+*.m4a
+*.aac
+*.ogg
+
+# Cover art high-res (kept local)
